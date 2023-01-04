@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello 2023~我的破烂新年</title>
-    <url>/2023/uncategorized/2022%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="Bye，2022！"><a href="#Bye，2022！" class="headerlink" title="Bye，2022！"></a>Bye，2022！</h1><h2 id="一些闲言碎语"><a href="#一些闲言碎语" class="headerlink" title="一些闲言碎语"></a>一些闲言碎语</h2><p>  2022年，我终于考上了心心念念的“好大学”。<br>  <del>可是我发现我是名副其实“全能型”选手，本来就没有什么数学脑袋，最后6学分的数学分析也只有77分</del><br>  妈妈给了我好多好多钱，身材焦虑消失。<br>  <del>开始暴饮暴食，身材走样，不能控制进食。乱花钱，管不住自己了。</del><br>  遇到了很多很好的人，总是有人出手帮扶。<br>  <del>一起走过七年的人，把自己拉黑了。原来的朋友，把难听的话说尽，发给妈妈，家里好压抑，说不出一句话。自己身边曾经的人都走光了。</del><br>  开辟了好些副业，体验了许多新鲜感。<br>  <del>可是什么也没做好哎，一直在水啊水，赶进度，没什么拿出来的成绩</del></p>
-]]></content>
-      <tags>
-        <tag>一些总结</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AI概论</title>
     <url>/2023/%E5%AD%A6%E7%82%B9/AI%E6%A6%82%E8%AE%BA/</url>
     <content><![CDATA[<p>#机器学习<br>通过对数据的学习拥有特定技能<br>通过对已获取的信息的处理来推知为获取的信息<br>##深度学习<br>###训练<br>使用深度神经网络为工具的机器学习算法 视为利用数据进行拟合的过程</p>
@@ -105,17 +96,10 @@
       </tags>
   </entry>
   <entry>
-    <title>1.2作业  马明娇</title>
-    <url>/2023/uncategorized/%E4%BD%9C%E4%B8%9A%E4%B8%93%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="机构"><a href="#机构" class="headerlink" title="机构"></a>机构</h1><p>指由两个或两个以上构件通过活动联接形成的构件系统</p>
-<p>隔框<br>折叠机构</p>
-<h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><p>由组成整体的各部分的搭配和安排</p>
-<p>木质结构<br>碳纤维复材结构<br>平尾平均气动弦长<br>边界层厚度</p>
-<h1 id="驱动"><a href="#驱动" class="headerlink" title="驱动"></a>驱动</h1><p>是添加到操作系统中的特殊程序，其中包含有关硬件设备的信息</p>
-<p>数传<br>图传<br>GPS</p>
-<h1 id="电子设备"><a href="#电子设备" class="headerlink" title="电子设备"></a>电子设备</h1><p>是指由集成电路、晶体管、电子管等电子元器件组成，应用电子技术（包括）软件发挥作用的设备，包括电子计算机以及由电子计算机控制的机器人、数控或程控系统等。</p>
-<p>电机架<br>飞行控制器</p>
-]]></content>
+    <title>作业</title>
+    <url>/2023/uncategorized/%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<p>马明娇 22375087</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">##作业1</span></span><br><span class="line">years = [<span class="number">20</span>, <span class="number">25</span>, <span class="number">19</span>, <span class="number">88</span>, <span class="number">77</span>, <span class="number">29</span>, <span class="number">21</span>]</span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    <span class="keyword">if</span> year &lt; <span class="number">24</span>:</span><br><span class="line">        num+=<span class="number">1</span></span><br><span class="line">    <span class="symbol">else:</span></span><br><span class="line">        continue</span><br><span class="line">print(num)</span><br><span class="line"></span><br><span class="line"><span class="comment">##作业2</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">28</span> <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    print(<span class="string">&quot;Yes&quot;</span>)</span><br><span class="line"><span class="symbol">else:</span></span><br><span class="line">    print(<span class="string">&quot;No&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    <span class="keyword">if</span> year==<span class="number">28</span>:</span><br><span class="line">        print(<span class="string">&quot;Yes&quot;</span>)</span><br><span class="line">        num=<span class="number">0</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="keyword">if</span> num!=<span class="number">0</span>:</span><br><span class="line">    print(<span class="string">&quot;No&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##作业3</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">F</span>(<span class="params">x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">num=<span class="number">3</span></span><br><span class="line">a=<span class="number">1</span></span><br><span class="line">b=<span class="number">1</span></span><br><span class="line">c=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num&lt;=<span class="number">50</span>:</span><br><span class="line">    c = b</span><br><span class="line">    b = F(a, b)</span><br><span class="line">    a = c</span><br><span class="line">    num+=<span class="number">1</span></span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line"><span class="comment">##作业4</span></span><br><span class="line"><span class="keyword">class</span> <span class="symbol">vehicle:</span></span><br><span class="line">    car1=[<span class="string">&quot;Ferrari&quot;</span>,<span class="string">&quot;car&quot;</span>,<span class="string">&quot;Blue&quot;</span>,<span class="string">&quot;500000&quot;</span>]</span><br><span class="line">    car2=[<span class="string">&quot;Toyota&quot;</span>,<span class="string">&quot;Pick&quot;</span>,<span class="string">&quot;White&quot;</span>,<span class="string">&quot;1000000&quot;</span>]</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">informationn</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> vehicle.<span class="symbol">car1:</span></span><br><span class="line">            print(i,<span class="keyword">end</span>=<span class="string">&quot; &quot;</span>)</span><br><span class="line">        print(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> vehicle.<span class="symbol">car2:</span></span><br><span class="line">            print(i,<span class="keyword">end</span>=<span class="string">&quot; &quot;</span>)</span><br><span class="line">vehicle().informationn()</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>航模基础</title>
