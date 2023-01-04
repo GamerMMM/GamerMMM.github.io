@@ -90,8 +90,23 @@
       </tags>
   </entry>
   <entry>
+    <title>python基础</title>
+    <url>/2023/%E5%AD%A6%E7%82%B9/python%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<p>python基础都没有的我真的伤不起呀呜呜 浅读一下《python编程：从入门到实践》顺手记点东西~希望以后能在脑子里留一点嘿嘿</p>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> ele <span class="keyword">in</span> <span class="symbol">list:</span></span><br><span class="line">      print(ele,<span class="keyword">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除 remove只删除首个指定元素 若要检查或者全部删除 需要使用for循环<br><code>.pop(place)</code>指定位置弹出元素<br><code>.sort()</code><br><code>.sort(reverse=True)</code><br><code>print(sorted(listname))</code></p>
+]]></content>
+      <categories>
+        <category>学点</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1.2作业  马明娇</title>
-    <url>/2023/uncategorized/note/</url>
+    <url>/2023/uncategorized/%E4%BD%9C%E4%B8%9A%E4%B8%93%E7%94%A8/</url>
     <content><![CDATA[<h1 id="机构"><a href="#机构" class="headerlink" title="机构"></a>机构</h1><p>指由两个或两个以上构件通过活动联接形成的构件系统</p>
 <p>隔框<br>折叠机构</p>
 <h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><p>由组成整体的各部分的搭配和安排</p>
@@ -101,21 +116,6 @@
 <h1 id="电子设备"><a href="#电子设备" class="headerlink" title="电子设备"></a>电子设备</h1><p>是指由集成电路、晶体管、电子管等电子元器件组成，应用电子技术（包括）软件发挥作用的设备，包括电子计算机以及由电子计算机控制的机器人、数控或程控系统等。</p>
 <p>电机架<br>飞行控制器</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>python基础</title>
-    <url>/2023/%E5%AD%A6%E7%82%B9/python%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<p>python基础都没有的我真的伤不起呀呜呜 浅读一下《python编程：从入门到实践》顺手记点东西~希望以后能在脑子里留一点嘿嘿</p>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for ele in list:</span><br><span class="line">      print(ele,end=&#x27; &#x27;)</span><br></pre></td></tr></table></figure>
-<p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除<br><code>.pop(place)</code>指定位置弹出元素</p>
-]]></content>
-      <categories>
-        <category>学点</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
   </entry>
   <entry>
     <title>航模基础</title>
@@ -135,7 +135,7 @@
 <li>6.燃料发动机 动力组件复杂不要 需要经验调试<br>建议electric： easy to maintain</li>
 <li>7.要能看见  打飞机更容易看到方向 但是速度太快 需要太多空间<br> proper size-for your flying space</li>
 <li>8.安装：<ul>
-<li>机翼安装：飞翼安装差异主要是为了达到更好的飞行效果<br>     + 初始时存在安装角 angle of incidence<br>下单翼：飞机的机翼安装在机身下部，位于机身轴线水平面的下方 电机一般在机体后<br> 很安全 强度高 阻力小 升力大 飞翼可快可慢  碰到地面时不会很快坏掉 更好保护元件 机动性好<br>中单翼：飞机的机翼安装在机身中部<br> 重心在中间 平衡好可以在各个角度控制好<br>上单翼：机翼位于机身轴线水平面的上方<br> 低重心 上反角 每次起飞时会快速平衡可以自己调整好重心 升力大 稳定性好<br> <img src="/img/%E4%B8%8A%E4%B8%AD%E4%B8%8B%E7%BF%BC.png" alt="上单翼 中单翼 下单翼"></li>
+<li>机翼安装：飞翼安装差异主要是为了达到更好的飞行效果<br>     + 初始时存在安装角 angle of incidence<br>下单翼：飞机的机翼安装在机身下部，位于机身轴线水平面的下方 电机一般在机体后<br> 很安全 强度高 阻力小 升力大 飞翼可快可慢  碰到地面时不会很快坏掉 更好保护元件 机动性好<br>中单翼：飞机的机翼安装在机身中部<br> 重心在中间 平衡好可以在各个角度控制好<br>上单翼：机翼位于机身轴线水平面的上方<br> 低重心 上反角 每次起飞时会快速平衡可以自己调整好重心 升力大 稳定性好<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%8A%E4%B8%AD%E4%B8%8B%E7%BF%BC.png" alt="上单翼 中单翼 下单翼"></li>
 <li>螺旋桨位置：<br> 腰推式：尾推螺旋桨中后置<br> 前拉式：电子元件在机头  飞行更平稳  性能更好<br> 涵道风扇电机：可以飞的很快</li>
 </ul>
 </li>
@@ -293,14 +293,14 @@
     - 扶飞机
       * 人蹲在飞机左边 躲开排气管
       * 左手抓住左翼根前缘，右手把住机尾
-      * __左手向后__用力，防止飞机冲出去
-      * __右手向前__用力，和启动器同学较劲，怼住启动器
+      * **左手向后**用力，防止飞机冲出去
+      * **右手向前**用力，和启动器同学较劲，怼住启动器
       * __没让松手不许松手__（可能要多次试验），松手前和操纵手眼神确认
    + 点火时：
      - 一个人右手启动器，左手火头电（一个人拿着遥控器）；一个人扶飞机
      - 启动器怼住桨罩后开始启动，注意听爆燃声，连续爆燃后可以脱离
      - 转速稳定以后（靠耳朵听），拿走火头电，躲开螺旋桨
-     - 操纵手__一般0%~15%油门启动__(小车)，如果打不着火中大车启动
+     - 操纵手**一般0%~15%油门启动**(小车)，如果打不着火中大车启动
      - 扶飞机不要撒手
   + 点火后：
     - 火头电揣兜里，启动器拿开，开始准备调试发动机
@@ -322,6 +322,30 @@
      - 先关飞机后关遥控器
      - 用乙醇清洗飞机表面：排气管吹出的蓖麻油 未完全燃烧的汽油 废弃ect在排气管后的机身
 </code></pre>
+</li>
+<li><p><strong>电气系统</strong><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A51.png" alt="安全须知1"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A52.png" alt="安全须知2"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%89%E7%B1%BB%E7%94%B5%E6%B1%A0.png" alt="三类常用电池"></p>
+<ul>
+<li>锂电池：（最远）黑负红正<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E6%B1%A01.png" alt="锂电池"><br> 中间的黑线每条连一正一副<br> 平衡头孔数&#x3D;电池数+1</li>
+<li>⭐读电池参数<br> 放电倍率：倍率（c）×电池容量（毫安时mah）&#x3D;最大放电允许电流（mA）<br> s串联p并联3s2p三块电池串联后两两并联</li>
+<li>⭐测电操作<br>用平衡头（白头）<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>数据是每一片电池的数据</li>
+<li>电调：根据控制信号调节电动机的转速<br>有刷电机与无刷电机：区别在于输出线 无刷：三根线（三项脉冲直流电）输出 有刷：一根线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%831.png" alt="电调结构"><br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>信号线：白红黑三根线 红线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%833.png" alt="UBEC"><br>BEC集成到电调上 UBEC独立<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%832.png" alt="电调结构"></li>
+<li>接收机<br><img src="/img/%E8%88%AA%E6%A8%A1/%E6%8E%A5%E6%94%B6%E6%9C%BA.png" alt="航模接收机"><ul>
+<li>天线尽量远离对方 一个竖直一个水平最好</li>
+</ul>
+</li>
+<li>舵机<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA.png" alt="舵机"><ul>
+<li>中立位：保证未接收到信号时舵面也保持在中立位<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA2.png" alt="舵测"></li>
+<li>舵测：舵机会跟着舵测旋转旋转起来（手动）<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA3.png" alt="舵机参数"></li>
+<li>舵机参数：<br> 速度：4.8v工作电压下 转过60°需要0.12s<br> 扭矩：4.8v工作电压下 1cm舵机摇臂处可以拉动1.6公斤的东西<br> 齿轮材质：变速齿轮的材质  金属材质可以吃力更大 常用于大扭矩舵机 但是重量大</li>
+</ul>
+</li>
+<li>线材：<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BA%BF%E6%9D%90.png" alt="线材"><ul>
+<li>针是公头 套是母头（看的是金属部分） 黄色棒状是香蕉头（公母头去了橡胶套）</li>
+<li>电线：漆包线相较于硅胶线更轻 但是更加脆弱易断 也不好用<br> 绕电机线圈</li>
+<li>AWG值越大 线越细<br> 通常以绝对安全的值考虑 航模通电时间短通常使用偏细的线也没啥问题~</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p><strong>小金星制作</strong></p>
 <ul>
