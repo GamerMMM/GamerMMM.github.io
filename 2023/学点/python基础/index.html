@@ -81,6 +81,22 @@
 <h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ele <span class="keyword">in</span> <span class="symbol">list:</span></span><br><span class="line">      print(ele,<span class="keyword">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除 remove只删除首个指定元素 若要检查或者全部删除 需要使用for循环<br><code>.pop(place)</code>指定位置弹出元素<br><code>.sort()</code><br><code>.sort(reverse=True)</code><br><code>print(sorted(listname))</code></p>
+<h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h1><ul>
+<li>如果条件语句中作为判断条件的是一个整形，则它的值为0时等同于布尔型的False，其余为True</li>
+<li>布尔型操作符xor</li>
+<li><code>in</code>操作符：检索某个对象容器中是否存在某一个对象（e.g.list）</li>
+<li><code>is</code>比较实例本身（cmp双等号比较内部变量的值）<br>比如x&#x3D;1y&#x3D;1时 <code>x is y</code>是False但是 <code>x==y</code>是True</li>
+<li><code>not</code>对表达式进行取反</li>
+<li><code>for</code>除了直接标定次数以外还可以用<code>range</code>和<code>xrange</code>；前者返回一个新的数字list，包含指定范围内的数字；而后者返回一个迭代器，这种方式效率更高。<br> - 二者下标均从0开始<br> - 前闭后开（起点，终点，步长）<br> - <code>for i in range():</code></li>
+<li><code>while 条件：</code><br> - 和循环语句同级可以使用else语句 每次循环开始阶段的判断表达式都可以认为是一个if语句。</li>
+<li>函数<code>def name(x,y....)</code><br> - ()内可以为空 在代码中直接调用即可，有几个未知数，在代码中相应应当输入多少值。<br> - 返回值return+返回命令</li>
+</ul>
+<p>###类<code>class</code>和对象<code>object</code></p>
+<ul>
+<li>对象是对变量和函数的封装，是一个单一实体，对象从类中获得他们的变量和函数，类本质上是一个创建对象的模板</li>
+<li>可以以一个类为模板创建多个对象，也可以更改某个对象的某个变量。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">      variable = <span class="string">&quot;blabla&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">def</span> <span class="title function_">my_function</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">             print(<span class="string">&quot;This is a message inside the class.&quot;</span>)</span><br><span class="line"></span><br><span class="line">my_object = <span class="title class_">MyClass</span>()</span><br><span class="line">print(my_object.variable)</span><br><span class="line"><span class="comment"># blabla</span></span><br><span class="line">my_object2 = <span class="title class_">MyClass</span>()</span><br><span class="line">my_object2.variable = <span class="string">&quot;lalalala&quot;</span></span><br><span class="line">print(my_object2.variable)</span><br><span class="line"><span class="comment"># lalalala</span></span><br><span class="line">my_object.my_function()</span><br><span class="line"><span class="comment"># This is a message inside the class.</span></span><br></pre></td></tr></table></figure></li>
+<li><code>init()</code>函数：是类的初始化函数，默认可以只有<code>self</code>函数，也可以传入别的参数进行初始化。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">NumberHolder</span>:</span><br><span class="line">       <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params"><span class="variable language_">self</span>, number</span>):</span><br><span class="line">             <span class="variable language_">self</span>.number = number</span><br><span class="line">  </span><br><span class="line">holder1 = <span class="title class_">NumberHolder</span>(<span class="number">19260817</span>)</span><br><span class="line">print(holder1.number)</span><br></pre></td></tr></table></figure></li>
+</ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -105,7 +121,7 @@
     </div>
     
         <div class="side">
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">列表</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.</span> <span class="toc-text">条件语句</span></a></li></ol>
         </div>
     
 </div>

@@ -87,6 +87,22 @@
 <h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> ele <span class="keyword">in</span> <span class="symbol">list:</span></span><br><span class="line">      print(ele,<span class="keyword">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除 remove只删除首个指定元素 若要检查或者全部删除 需要使用for循环<br><code>.pop(place)</code>指定位置弹出元素<br><code>.sort()</code><br><code>.sort(reverse=True)</code><br><code>print(sorted(listname))</code></p>
+<h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h1><ul>
+<li>如果条件语句中作为判断条件的是一个整形，则它的值为0时等同于布尔型的False，其余为True</li>
+<li>布尔型操作符xor</li>
+<li><code>in</code>操作符：检索某个对象容器中是否存在某一个对象（e.g.list）</li>
+<li><code>is</code>比较实例本身（cmp双等号比较内部变量的值）<br>比如x&#x3D;1y&#x3D;1时 <code>x is y</code>是False但是 <code>x==y</code>是True</li>
+<li><code>not</code>对表达式进行取反</li>
+<li><code>for</code>除了直接标定次数以外还可以用<code>range</code>和<code>xrange</code>；前者返回一个新的数字list，包含指定范围内的数字；而后者返回一个迭代器，这种方式效率更高。<br> - 二者下标均从0开始<br> - 前闭后开（起点，终点，步长）<br> - <code>for i in range():</code></li>
+<li><code>while 条件：</code><br> - 和循环语句同级可以使用else语句 每次循环开始阶段的判断表达式都可以认为是一个if语句。</li>
+<li>函数<code>def name(x,y....)</code><br> - ()内可以为空 在代码中直接调用即可，有几个未知数，在代码中相应应当输入多少值。<br> - 返回值return+返回命令</li>
+</ul>
+<p>###类<code>class</code>和对象<code>object</code></p>
+<ul>
+<li>对象是对变量和函数的封装，是一个单一实体，对象从类中获得他们的变量和函数，类本质上是一个创建对象的模板</li>
+<li>可以以一个类为模板创建多个对象，也可以更改某个对象的某个变量。<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">      variable = <span class="string">&quot;blabla&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">def</span> <span class="title function_">my_function</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">             print(<span class="string">&quot;This is a message inside the class.&quot;</span>)</span><br><span class="line"></span><br><span class="line">my_object = <span class="title class_">MyClass</span>()</span><br><span class="line">print(my_object.variable)</span><br><span class="line"><span class="comment"># blabla</span></span><br><span class="line">my_object2 = <span class="title class_">MyClass</span>()</span><br><span class="line">my_object2.variable = <span class="string">&quot;lalalala&quot;</span></span><br><span class="line">print(my_object2.variable)</span><br><span class="line"><span class="comment"># lalalala</span></span><br><span class="line">my_object.my_function()</span><br><span class="line"><span class="comment"># This is a message inside the class.</span></span><br></pre></td></tr></table></figure></li>
+<li><code>init()</code>函数：是类的初始化函数，默认可以只有<code>self</code>函数，也可以传入别的参数进行初始化。<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">NumberHolder</span>:</span><br><span class="line">       <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params"><span class="variable language_">self</span>, number</span>):</span><br><span class="line">             <span class="variable language_">self</span>.number = number</span><br><span class="line">  </span><br><span class="line">holder1 = <span class="title class_">NumberHolder</span>(<span class="number">19260817</span>)</span><br><span class="line">print(holder1.number)</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
         <category>学点</category>
@@ -94,12 +110,6 @@
       <tags>
         <tag>python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>作业</title>
-    <url>/2023/uncategorized/%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<p>马明娇 22375087</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment">##作业1</span></span><br><span class="line">years = [<span class="number">20</span>, <span class="number">25</span>, <span class="number">19</span>, <span class="number">88</span>, <span class="number">77</span>, <span class="number">29</span>, <span class="number">21</span>]</span><br><span class="line">num=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    <span class="keyword">if</span> year &lt; <span class="number">24</span>:</span><br><span class="line">        num+=<span class="number">1</span></span><br><span class="line">    <span class="symbol">else:</span></span><br><span class="line">        continue</span><br><span class="line">print(num)</span><br><span class="line"></span><br><span class="line"><span class="comment">##作业2</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">28</span> <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    print(<span class="string">&quot;Yes&quot;</span>)</span><br><span class="line"><span class="symbol">else:</span></span><br><span class="line">    print(<span class="string">&quot;No&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="symbol">years:</span></span><br><span class="line">    <span class="keyword">if</span> year==<span class="number">28</span>:</span><br><span class="line">        print(<span class="string">&quot;Yes&quot;</span>)</span><br><span class="line">        num=<span class="number">0</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="keyword">if</span> num!=<span class="number">0</span>:</span><br><span class="line">    print(<span class="string">&quot;No&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##作业3</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">F</span>(<span class="params">x,y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">num=<span class="number">3</span></span><br><span class="line">a=<span class="number">1</span></span><br><span class="line">b=<span class="number">1</span></span><br><span class="line">c=<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> num&lt;=<span class="number">50</span>:</span><br><span class="line">    c = b</span><br><span class="line">    b = F(a, b)</span><br><span class="line">    a = c</span><br><span class="line">    num+=<span class="number">1</span></span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line"><span class="comment">##作业4</span></span><br><span class="line"><span class="keyword">class</span> <span class="symbol">vehicle:</span></span><br><span class="line">    car1=[<span class="string">&quot;Ferrari&quot;</span>,<span class="string">&quot;car&quot;</span>,<span class="string">&quot;Blue&quot;</span>,<span class="string">&quot;500000&quot;</span>]</span><br><span class="line">    car2=[<span class="string">&quot;Toyota&quot;</span>,<span class="string">&quot;Pick&quot;</span>,<span class="string">&quot;White&quot;</span>,<span class="string">&quot;1000000&quot;</span>]</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">informationn</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> vehicle.<span class="symbol">car1:</span></span><br><span class="line">            print(i,<span class="keyword">end</span>=<span class="string">&quot; &quot;</span>)</span><br><span class="line">        print(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> vehicle.<span class="symbol">car2:</span></span><br><span class="line">            print(i,<span class="keyword">end</span>=<span class="string">&quot; &quot;</span>)</span><br><span class="line">vehicle().informationn()</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>航模基础</title>
@@ -129,7 +139,7 @@
 <ul>
 <li>1.飞翼：<ul>
 <li>无机舱会单翼 若使用机舱则需要左右机翼拼接在机舱 选用质量轻强度大的铝销 会有副销</li>
-<li>机翼相关参数：<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B01.png" alt="机翼相关参数1"><br>   使用最多：平均气动弦长（展弦比常用的是平均气动弦长）<br>   展弦比：具体代表了<br>   翼载荷对应越大，需要的材料强度越强。<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B02.png" alt="机翼的相关参数2"><br>   前缘受力最大 与空气直接接触<br>   <strong>前缘加强：方口打磨（没听懂</strong><br>   c.g.(%MAC)从平均气动弦的前端算起所占长度百分比<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B03.png" alt="机翼相关参数3"><br>   后掠角越大 速度可以越大 后移也有助于后移失速速度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B04.png" alt="机翼相关参数4"><br>   安装角是什么一定要记住！上反角可以增加航模稳定性</li>
+<li>机翼相关参数：<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B01.png" alt="机翼相关参数1"><br>   使用最多：平均气动弦长（展弦比常用的是平均气动弦长）<br>   展弦比：具体代表了<br>   翼载荷对应越大，需要的材料强度越强。<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B02.png" alt="机翼的相关参数2"><br>   前缘受力最大 与空气直接接触<br>   <strong>前缘加强：方口打磨（没听懂</strong><br>   c.g.(%MAC)从平均气动弦的前端算起所占长度百分比<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B03.png" alt="机翼相关参数3"><br>   后掠角越大 速度可以越大 后移也有助于后移失速速度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B04.png" alt="机翼相关参数4"><br>   安装角是什么一定要记住！上反角可以增加航模稳定性</li>
 <li>翼型：两大参数主要为最大弯度和最大厚度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B.png" alt="翼型"><br>   [point]前后缘是直线  弦长实质是两平行线的距离<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%80%E5%A4%A7%E5%8E%9A%E5%BA%A6.png" alt="最大厚度"><br>   [point]中弧线用于描述弯度，会影响飞机升力的参数<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%AD%E5%BC%A7%E7%BA%BF.png" alt="中弧线"><br>   [point]最大厚度可假设为在机翼前缘百分之二十五处</li>
 <li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%841.jpg" alt="机翼"><br><strong>需要了解翼肋、翼梁、腹板和前后缘是什么</strong><br><strong>机翼实用知识是考试内容必须掌握</strong><br>翼梁：c型梁&#x2F;弓形梁+<br>蒙皮skin：受力+减小阻力+使气动外形更光滑<br>襟翼wing flap：转轴<br>副翼alleron：转轴+可作为襟翼或减速板<br>翼肋ribs：横向部件+承受+支撑加强蒙皮<br>前缘会有加强横条 与襟翼副翼相连空出来会有后缘<ul>
 <li>分类：<br>1.对称：<br>2.半对称：机翼上表面弯而下表面比较平直；速度会快 而且横滚直爬比较灵活  不需要打太多升降舵 扁平底 抵消负升力：推操纵杆<br>3.凹凸翼型：飞机小  低速大升力  速度慢稳定性强  低速性能好</li>
@@ -348,6 +358,38 @@
       </categories>
       <tags>
         <tag>飞机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>resolution.2023</title>
+    <url>/2023/uncategorized/resolution/</url>
+    <content><![CDATA[<p>##Year resolution</p>
+<ul>
+<li><input disabled="" type="checkbox"> 瘦到50kg</li>
+<li><input disabled="" type="checkbox"> jpc各读一本书</li>
+<li><input disabled="" type="checkbox"> gpa3.7+</li>
+<li><input disabled="" type="checkbox"> 四六级600+</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+<li>[ ]</li>
+</ul>
+<p>##Month resolution<br>###January</p>
+<ul>
+<li><input disabled="" type="checkbox"> 读完《web安全漏洞原理及实战》</li>
+<li><input disabled="" type="checkbox"> 学习完python基础</li>
+<li><input disabled="" type="checkbox"> 大物预习两章</li>
+<li><input disabled="" type="checkbox"> 瘦到53kg</li>
+<li><input disabled="" type="checkbox"> Java一章</li>
+<li><input disabled="" type="checkbox"> 坚持背单词阅读20天</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>resolution</tag>
       </tags>
   </entry>
 </search>
