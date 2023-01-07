@@ -50,11 +50,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>installtips</title>
+    <title>install&amp;&amp;tips</title>
     <url>/2023/%E5%AD%A6%E7%82%B9/install/</url>
     <content><![CDATA[<p>一些遇到的bug 听老学长的 狠狠记住</p>
 <span id="more"></span>
 
+<blockquote>
+<p>Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load. To activate this environment please see <a href="https://conda.io/activation">https://conda.io/activation</a></p>
+</blockquote>
+<p>在命令行输入<code>activate conda D:\www\xxx\Game\anaconda</code>其中最后时anaconda安装文件夹位置</p>
 <blockquote>
 <p>due to incompatibility with several python libraries, ‘Destination Floder’ cannot contain non-ascii characters (special characters or deacreitics).</p>
 </blockquote>
@@ -81,12 +85,400 @@
       </tags>
   </entry>
   <entry>
+    <title>航模基础</title>
+    <url>/2023/%E5%AD%A6%E7%82%B9/%E8%88%AA%E6%A8%A1%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>寒假航模队培训啦！！</p>
+<span id="more"></span>
+<ul>
+<li><h1 id="选择适合自己的航模"><a href="#选择适合自己的航模" class="headerlink" title="选择适合自己的航模"></a><strong>选择适合自己的航模</strong></h1><ul>
+<li><ol>
+<li>三通道（主桨转速调上下 方向舵左右转向 尾桨改变旋转方向调前后）：尽量简洁&amp;&amp;三通道机翼形成上反角 便于飞行时保持平衡<br> 四通道（油门&#x2F;电子调速器调上下 升降舵调前后 副翼舵机左右平移 方向舵左右方向）<br> ⭐飞机的通道：1左副翼，2升降舵，3油门，4方向舵&#x2F;陀螺仪，5起落架，6右副翼</li>
+</ol>
+</li>
+<li>2.dihedral【航】上反角、下反角<br><img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%8A%E5%8F%8D%E8%A7%92.png" alt="上反角"><br>⭐增强飞机的横向稳定性</li>
+<li>3.选择低速机  增加反应时间</li>
+<li>4.泡沫飞机开始  很容易修  零件比较少</li>
+<li>5.零件容易买到</li>
+<li>6.燃料发动机 动力组件复杂不要 需要经验调试<br>建议electric： easy to maintain</li>
+<li>7.要能看见  打飞机更容易看到方向 但是速度太快 需要太多空间<br> proper size-for your flying space</li>
+<li>8.安装：<ul>
+<li>机翼安装：飞翼安装差异主要是为了达到更好的飞行效果<br>     + 初始时存在安装角 angle of incidence<br>下单翼：飞机的机翼安装在机身下部，位于机身轴线水平面的下方 电机一般在机体后<br> 很安全 强度高 阻力小 升力大 飞翼可快可慢  碰到地面时不会很快坏掉 更好保护元件 机动性好<br>中单翼：飞机的机翼安装在机身中部<br> 重心在中间 平衡好可以在各个角度控制好<br>上单翼：机翼位于机身轴线水平面的上方<br> 低重心 上反角 每次起飞时会快速平衡可以自己调整好重心 升力大 稳定性好<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%8A%E4%B8%AD%E4%B8%8B%E7%BF%BC.png" alt="上单翼 中单翼 下单翼"></li>
+<li>螺旋桨位置：<br> 腰推式：尾推螺旋桨中后置<br> 前拉式：电子元件在机头  飞行更平稳  性能更好<br> 涵道风扇电机：可以飞的很快</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h1 id="飞机组成"><a href="#飞机组成" class="headerlink" title="飞机组成"></a><strong>飞机组成</strong></h1><p>  <img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E9%83%A8%E4%BB%B6%E5%92%8C%E6%93%8D%E7%BA%B5%E9%9D%A2.png" alt="飞机的主要部件和操纵面"></p>
+<ul>
+<li>1.飞翼：<ul>
+<li>无机舱会单翼 若使用机舱则需要左右机翼拼接在机舱 选用质量轻强度大的铝销 会有副销</li>
+<li>机翼相关参数：<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B01.png" alt="机翼相关参数1"><br>   使用最多：平均气动弦长（展弦比常用的是平均气动弦长）<br>   展弦比：具体代表了<br>   翼载荷对应越大，需要的材料强度越强。<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B02.png" alt="机翼的相关参数2"><br>   前缘受力最大 与空气直接接触<br>   <strong>前缘加强：方口打磨（没听懂</strong><br>   c.g.(%MAC)从平均气动弦的前端算起所占长度百分比<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B03.png" alt="机翼相关参数3"><br>   后掠角越大 速度可以越大 后移也有助于后移失速速度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B04.png" alt="机翼相关参数4"><br>   安装角是什么一定要记住！上反角可以增加航模稳定性</li>
+<li>翼型：两大参数主要为最大弯度和最大厚度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B.png" alt="翼型"><br>   [point]前后缘是直线  弦长实质是两平行线的距离<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%80%E5%A4%A7%E5%8E%9A%E5%BA%A6.png" alt="最大厚度"><br>   [point]中弧线用于描述弯度，会影响飞机升力的参数<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%AD%E5%BC%A7%E7%BA%BF.png" alt="中弧线"><br>   [point]最大厚度可假设为在机翼前缘百分之二十五处</li>
+<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%841.jpg" alt="机翼"><br><strong>需要了解翼肋、翼梁、腹板和前后缘是什么</strong><br><strong>机翼实用知识是考试内容必须掌握</strong><br>翼梁：c型梁&#x2F;弓形梁+是机翼的最强有力的纵向构件,主要承受机翼的弯矩以及切变力 下层为腹板 帮助传递弯矩<br>蒙皮skin：受力+减小阻力+使气动外形更光滑<br>蒙板可以视为高强度蒙皮 上下两层蒙板+翼梁可以构成D型盒<br>襟翼wing flap：转轴<br>副翼alleron：转轴+可作为襟翼或减速板<ul>
+<li>复材副翼：核心为减轻重量的同时保证其刚度<br>翼肋ribs：横向部件+承受+支撑加强蒙皮<br>纵截面：双凸 凹凸<br>横截面：工字形（上下缘条与翼肋主体构成 提高刚度强度）下侧有加强条<br>最外层肋一般做成c形<br>前缘会有加强横条 与襟翼副翼相连空出来会有后缘</li>
+</ul>
+<ul>
+<li>分类：<br>1.对称：<br>2.半对称：机翼上表面弯而下表面比较平直；速度会快 而且横滚直爬比较灵活  不需要打太多升降舵 扁平底 抵消负升力：推操纵杆<br>3.凹凸翼型：飞机小  低速大升力  速度慢稳定性强  低速性能好</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2.舵面：<br>   ·⭐升降舵：<strong>拉杆往后上翘提供升力（抬头起飞） 推杆往前下压提供降力（低头俯冲）</strong><br><img src="/img/%E8%88%AA%E6%A8%A1/%E5%8D%87%E9%99%8D%E8%88%B5.png" alt="升降舵"><br>   ·副翼：绝大多数时间是同时以相同幅度相反方向移动  做横滚运动  滚转力矩 可以倾斜飞机<br> <strong>example.如果飞机向往右转，那么左翼的升力就要比右翼大，左翼升力变大，左边的副翼需要往下偏一点，或者右边的副翼往上偏一点</strong>  <strong>往哪转哪边向上</strong><br>  ·⭐方向舵：控制航向 与飞机飞行方向同向时左右同一方向运动 加上反角可以实现小角度滚转（同副翼<br>  <strong>飞机要想转弯，可以动方向舵。方向舵往右偏，空气给它的力就是往左的，机尾就能往左偏，飞机也就往右转了。</strong><br>   ·舵机加需要加强翼肋 或者放舵机架 不然会断<br>   *⭐飞机的空间运动⭐姿态描述<br><img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E7%9A%84%E7%A9%BA%E9%97%B4%E8%BF%90%E5%8A%A8.png" alt="飞机的空间运动"></li>
+<li>3.尾翼：有两种不同的安定面<ul>
+<li>水平尾翼：需要控制 改变上下运动 比赛机基本上都有翼型</li>
+<li>垂直尾翼：方向稳定性 改变偏航角度</li>
+</ul>
+</li>
+<li>4.螺旋桨：实际相当于机翼产生升力从而产生推力<ul>
+<li>旋转式电机 由于具有一定速度</li>
+<li>桨叶拱形或弯曲 类似于机翼上表面 其余平坦 类似于机翼下表面<br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B01.png" alt="螺旋桨工作原理和几何参数"><br>   桨叶角单位为度 一般会选取特定的点进行桨叶角的测量 弦线通常由螺旋桨的桨叶面开始画<br>   螺旋角由桨叶角决定：桨叶角在螺旋桨本身不变时是一个定值 与螺旋桨本身成负相关<br>   低速与高速性能不同 固定螺旋桨难以达到兼容–一般选取螺旋桨直径和螺距以及桨叶面积（最大宽度&#x2F;投影面积）为参数<ul>
+<li>直径：越长越好</li>
+<li>螺距：<img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B02.png" alt="螺旋桨的几何螺距"><br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B03.png" alt="螺旋桨的有效（实际飞行中走过的距离）螺距"></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B04.png" alt="作用在螺旋桨的载荷"><br>  最重要的力是拉力和反扭力 但反扭力较小 但如果飞机轻 材料强度低 则需要考虑在内<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B05.png" alt="1"></li>
+<li>螺旋桨的转速rpm：是与电机反复迭代配合的过程<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E6%8B%89%E5%8A%9B%E8%AE%A1%E7%AE%97%E5%99%A8.png" alt="螺旋桨拉力计算器"></li>
+</ul>
+</li>
+<li>结构名称：<ul>
+<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%842.jpg" alt="机翼"></li>
+<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%843.jpg" alt="尾翼"></li>
+</ul>
+</li>
+<li>5.机身<ul>
+<li>材料力学基础<br>  研究什么？研究构建在外力作用下的变形、受力、破坏、失效的规律<br>  为什么研究？为合理设计构建提供有关强度、刚度和稳定性分析的基本理论与方法<br>  （破坏：断裂；失效：变形过大&#x2F;失稳）<br>  （强度：材料抵抗破坏的能力-航空工业常用比强度：强度&#x2F;质量；刚度：抵抗变形的能力；稳定性：保持平衡的能力）<br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9D%90%E6%96%99%E5%86%85%E5%8A%9B%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%BD%A2%E5%BC%8F.png" alt="材料内力的基本形式"><br>  剪力：沿横截面的力<br>  应力（某点处某截面上单位面积上的受力）：1.轴力（受拉螺栓）-正应力；2.剪力：切应力（在横截面内部）<br>  应变：1.正应变：取正方形无限小时边长受力时的变化量；2.切应变：取正方形无限小时边长受力时角度的变化；<br>  变形的基本形式：拉压、扭转、弯曲</li>
+<li>⭐失稳：受压、受扭<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E5%A4%B1%E7%A8%B3.png" alt="失稳"><br>   解决压感失稳：1.增大截面惯性矩 2.使各方向的柔度相等（各个方向的弯曲程度一样） 3.合理约束 4.调整长细比</li>
+<li>应力集中现象：避免孔、窄处、角点</li>
+<li>疲劳破坏（航空常见）：受力较小时是否也会有问题</li>
+<li>冲击载荷&gt;静载<br>  材料属性</li>
+<li>塑性材料：延伸率大 （线弹性时）拉压强度相同 受压剪断 eg·铝 刚</li>
+<li>脆性材料： 延伸率小 受拉强度&lt;&lt;受压强度 受压剪断 eg·木 碳 尼龙 树脂</li>
+<li>各向同性材料-金属、尼龙、碳（碳纤维为层状结构 </li>
+<li>各向异性材料-木材<br>  泊松比：横向正应变&#x2F;纵向正应变 0＜μ＜0.5（橡胶是0.5 完全不可压缩）<br>  扭转：截面受到切应力<br>  为什么空心比实心好？<br>  提高材料的利用率：在构件收到切应力时，只是表面在受力，内部不受力的部分直接去掉。不宜太薄：可能还有弯矩，容易受扭失稳。<br>  为什么闭合比开口好？<br>  闭式结构抗扭性能好 截面产生力的力矩很大<strong>承扭结构必须是一个高度闭合式的结构</strong><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E9%97%AD%E5%8F%A3.png" alt="闭口"><br>  <strong>D盒承扭</strong><br>  尽量等臂厚，不要有弱点<br>  尽量圆截面-面积达，不容易有应力集中（常出现在角处）<br>  和机身有什么关系？</li>
+<li>弯曲<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E5%BC%AF%E6%9B%B2.png" alt="闭口"><br>   悬臂梁：机翼<br>   简支梁铰链处只能承受纵向力 不能承受横向力<br>   三者边界条件不同 由此可以进行数学分析<ul>
+<li>弯曲内力：正应力、切应力<br>弯曲正应力沿截面线性分布 中性轴（不产生轴向变形的线&#x2F;面）上各点正应力为0<br>把材料集中在原理中性轴处 提高材料利用率<br>梁的设计：梁结构用于承弯 D型盒结构用于承扭</li>
+</ul>
+</li>
+<li>塑性材料：对称截面（拉压强度相同 正应力集合对称）-工字梁 箱状圆形空心梁</li>
+<li>脆性材料：应当使中心轴偏心 偏向于受拉一侧（更适于受压）-c型梁、T字梁<br>   piont.木头还是各向异性材料 防止纵向纤维失稳所以才加工字（工字承受上下弯曲正应力） 顺纹掰很容易断！<br>   腹板不易过薄：防失稳<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%85%B9%E6%9D%BF.png" alt="腹板"><ul>
+<li>双腹板：两块腹板形成闭式结构 扭矩会在剖面里 承受扭矩带来的剪流 </li>
+<li>单腹板：</li>
+</ul>
+</li>
+<li>复材梁制作：<br> 1.磨梁  使梁的各表面形成规整的表面<br> 2.粘配件与加强<br> 3.刷梁<br>  提升抗弯性能：<br>1.使用较小的截面面积 获得较大的惯性矩（空心、大半径、小壁厚）<br>2.局部加强（套管、加粗、加厚、加筋）<br>3.改善约束和加载方式（减小跨度、变集中力为均布力、增加绞支点）<br><img src="/img/%E8%88%AA%E6%A8%A1/%E5%A2%9E%E5%8A%A0%E7%BB%9E%E6%94%AF%E7%82%B9.png" alt="增加绞支点"><br>4.两个方向的抗弯性能相近<br>  注意考虑减重！</li>
+<li>加工制造：<ul>
+<li>复材<ul>
+<li>复材结构用于减重：用尽可能少（轻）的材料与结构</li>
+</ul>
+</li>
+<li>机身常用材料：<br>木材：轻木、桐木、松木<br>碳：布&#x2F;丝&#x2F;板&#x2F;管&#x2F;棒（斜纹&#x2F;半纹）&#x2F;粉-碳纤维排列<ul>
+<li>碳布：由碳纤维丝编织成的二维结构：覆盖到某些东西的表面，用胶贴上<br> 玻纤布 和碳布差不多 但是更重</li>
+<li>碳片&#x2F;玻纤片：纤维压合成的片状、刚度较大的结构<br> -平尾所给的扭矩过大时 由于碳片很薄 其抗扭强度够但是刚度不够 会呈现s型失稳<ul>
+<li>解决方案：增大截面面积 在碳片下侧粘贴2mm航空层板&#x2F;在内侧贴横纹轻木板造成闭合结构（抗扭刚度大）<br>金属：铝、钢、钛<br>胶粘剂：胶带、502（表面胶 一般只用来粘木头）、914（后者的一种 5：1 一个小时初步干 24h后强度最大 大于502）、AB胶&#x2F;哥俩好（配比）、MD4、M03（体积胶 强度与量有关 可以用胶的张力导一个圆角 更加牢固）</li>
+</ul>
+</li>
+<li>树脂（环氧树脂）<ul>
+<li>A为本体 B为固化剂</li>
+<li>M03固化时间24h M04固化时间4h 前者粘性强</li>
+<li>用途：做复材梁的时候用于刷梁，刷碳布（做D盒蒙皮）&#x2F;把碳布平顺粘到PMI泡沫板上，也可以粘别的东西</li>
+<li>清粉：微米级二氧化硅粉末 常与树脂配合使用 起到填充、粘合的作用 主要用于需要填充体积的工况（有毒 <strong>佩戴防毒面具</strong>）<br>纤维：凯夫拉斯（+502等） 凯夫拉绳<br>其他：橡胶、尼龙、热缩膜</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>连接与固紧<br>⭐螺纹连接：螺栓+螺母+垫片、自攻钉、螺栓+反爪螺母、顶丝<br>⭐螺栓连接：承轴力&#x2F;剪力&#x2F;弯矩<br>⭐失效形式：拉断、剪断、弯断、扭断（螺栓拧断在孔里）、松脱、压溃<br>防松方式：防松螺母、弹簧垫圈、对顶螺母、螺丝胶<br>榫卯连接：不需要额外零件 可以承受各方向的力<br>慎用胶连接 应当使用尽可能多的物理连接</li>
+<li>基本结构<br><img src="/img/%E8%88%AA%E6%A8%A1/%E5%B8%B8%E7%94%A8%E7%9A%84%E6%9C%BA%E8%BA%AB%E7%BB%93%E6%9E%84.png" alt="常用的机身结构"><br>承受正应力-轴向结构<br>长 壁板 厚的蒙皮蒙版<br>承受剪力：蒙皮<br>轴向、弯矩冲击载荷：起落架<br>机身（核心）的作用：容纳载荷、容纳设备、承受来自其他部分的力</li>
+</ul>
+</li>
+<li>实际机身结构分析：<ul>
+<li>结构感知-什么结构？承受什么力？不能承受什么力？承受什么的能力比较强？</li>
+<li>受力分析-结构会受到什么力？最有可能发生什么失效形式？</li>
+<li>设计制造-看懂前人的设计结构（为什么要这样设计？）</li>
+<li>如何防止失效？如何加强？用什么加强？怎样设计改进？</li>
+</ul>
+</li>
+<li>结构分析：<ul>
+<li>小金星：侧面是一整个桐木板 里边有与外轮廓完全相同的层板（桁架式结构 有很多三角形减重孔）</li>
+<li>太阳能：硬壳式结构；</li>
+<li>对地：小金星-桐板的桁架式结构 但是它承受弯矩和扭矩全部依靠斜撑去承扭<br><img src="/img/%E8%88%AA%E6%A8%A1/%E6%A1%81%E6%9E%B6%E5%BC%8F.png" alt="桁架式"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="力学理论提升：弹性力学、材料力学、结构力学、复合材料力学（层合板强度分析之前）数学建模-Abaqus-实验构建自己的模型计算器-空气动力学简介"><a href="#力学理论提升：弹性力学、材料力学、结构力学、复合材料力学（层合板强度分析之前）数学建模-Abaqus-实验构建自己的模型计算器-空气动力学简介" class="headerlink" title="力学理论提升：弹性力学、材料力学、结构力学、复合材料力学（层合板强度分析之前）数学建模 Abaqus 实验构建自己的模型计算器+ 空气动力学简介"></a>力学理论提升：弹性力学、材料力学、结构力学、复合材料力学（层合板强度分析之前）<br>数学建模 Abaqus 实验<br>构建自己的模型计算器<br><br>+ <strong>空气动力学简介</strong></h1><pre><code> - 1.飞机飞行原理
+    * 升力来源：动力来自于空气流动 空气流动来自于螺旋桨   
+      1.伯努利原理：飞机为什么能够飞上天？因为机翼受到向上的升力。飞机飞行时机翼周围空气的流线分布是指机翼横截面的形状上下不对称，机翼上方的流线密，流速大，下方的流线疏，流速小。由伯努利方程可知，机翼上方的压强小，下方的压强大。这样就产生了作用在机翼上的方向的升力 机身越长，机翼上的空气要跨越的距离更长，流动速度更快，由此机翼上面产生低压区，把飞机“吸进去”。
+         重要推论：等高流动时，流速大，压力就小。
+         流体运动的动能和势能相互转换，但总的能量为一常数，不变守恒
+         ![伯努利方程](/img/航模/伯努利方程.png)
+         通常情况下，可以测量总压、动压，从而计算得出静压
+         ![开放流体中的伯努利方程](/img/航模/开放流体中的伯努利方程.png)
+         封闭管道内如果管道足够大可以视作敞开体系
+      2.牛顿运动定律：物体发生作用时产生反作用力，由此产生压强差
+ - 2.失速：机翼上方空气流动失常；
+     应对：
+    *  1.控制气流速度：起飞后慢慢拉升飞机（减小攻角）-降低油门-推平升降舵-动力减小-自然降落（机头重量大会自然先降落）
+    *  2.保持平衡（失速时应当使控制杆中立）
+    * 3.飞的太慢容易失速 
+</code></pre>
+<ul>
+<li><p><strong>飞机飞行时的受力</strong></p>
+<ul>
+<li><img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E9%A3%9E%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%8F%97%E5%8A%9B.png" alt="飞机飞行中的受力"><br>  飞机的升力和阻力是由飞机外形决定的 由此可以计算飞机的升阻比<br>  推重比与几何外形没什么关系 推重比<br>  首先可以由重力推知升力-是否需要强机动性？（是则需强推力，若推力有限需要尽量减少阻力）-限制？推得阻力和推力-平飞时，升力等于重力，阻力等于推力；   </li>
+<li>升力：<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E7%9B%B8%E5%85%B3%E7%9A%84%E6%B0%94%E5%8A%A8%E5%8F%82%E6%95%B0.png" alt="翼型相关的气动参数"><br>  [point]该图的xy轴不是竖直方向和水平方向<br>         1.来流方向一定是飞机的飞行方向<br>         2.迎角&#x2F;攻角angle of attack：翼弦线和来流方向所夹的锐角<br>         3.入射角&#x2F;安装角：<br>         4.爬升角：<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%861.png" alt="翼型升力的产生原理1"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%862.png" alt="翼型升力的产生原理2"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%863.png" alt="翼型升力的产生原理3"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%861.png" alt="升力产生原理解读误区1"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%862.png" alt="升力产生原理解读误区2"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%863.png" alt="升力产生原理解读误区3"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%8D%87%E5%8A%9B%E5%85%AC%E5%BC%8F%E5%92%8C%E5%8D%87%E5%8A%9B%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0.png" alt="升力公式和升力影响因素"><br> 升力系数：对于同一架飞机，影响升力系数最重要的参量是迎角，采用仿真计算得到右侧曲线（为什么不是迎角越大升力越大？并非升力系数越大飞行效果越好 攻角为零？转折点（失速点）此后拉杆飞机再抬头飞机会不升反降<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%A2%9E%E5%8D%87%E8%A3%85%E7%BD%AE.png" alt="增升装置"><br> 简单襟翼可理解为增加弯度大的翼型<br> 富勒襟翼会增加机械复杂度 要搭建四杆结构（机械原理 或许会带来更大副作用<br> 推迟失速速度（使失速点靠后）来增加迎角 </li>
+<li>阻力：<br>  ⭐1.阻力的分类<br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%A9%BA%E6%B0%94%E7%B2%98%E6%80%A7%E4%B8%8E%E6%91%A9%E6%93%A6%E9%98%BB%E5%8A%9B.png" alt="空气粘性与摩擦阻力"></li>
+</ul>
+</li>
+<li><h1 id="遥控系统"><a href="#遥控系统" class="headerlink" title="遥控系统"></a><strong>遥控系统</strong></h1><p><img src="/img/%E8%88%AA%E6%A8%A1/%E9%81%A5%E6%8E%A7%E5%99%A8.png" alt="遥控器"><br>主要功能：通道 混控<br>⭐具体型号看图片能辨认<br>⭐安全操作：接电顺序 天线布置<br>⭐基本功能和区别<br>先开控后开飞机 先关飞机后关控–始终保持飞机处于可控状态</p>
+<ul>
+<li><p>关于操作<br><img src="/img/%E8%88%AA%E6%A8%A1/%E9%81%A5%E6%8E%A7%E5%99%A8.png" alt="遥控器"></p>
+</li>
+<li><p>⭐人机交互：手指搓圈选择 点中间的圈是确定 左上按键是返回 长按一秒钟相当于右键可以归零 退出长按锁住屏幕</p>
+</li>
+<li><p>⭐常用功能：（搓过去-点击）</p>
+<ul>
+<li>⭐系统system：系统设置<br> 14ch single g - link 7008需要两个对码 6008 6208可以单向对码 - 从红变绿可以对好（对码）-看接收机上标什么就调什么</li>
+<li>function 1.功能：设置映射<br> ⭐2.设置方法： 五通道设开关SG：5ch - 舵机插接收机五通道</li>
+<li>sub trim<strong>中立微调</strong>：最大可以调到240 用于飞前安装好后调整一些小误差 <strong>省出微调范围便于试飞调整 预防试飞时微调范围不够用</strong> 机械微调可以飞行状态调</li>
+<li>reverse 舵机反向 功能</li>
+<li>endpoint：调整舵量大小 调辅助位</li>
+<li>失控保护</li>
+<li>油门锁：右上角 pos打开开关后油门自动锁定在哪 熄火开关的位置比三角号更低就可以自动熄火<br> act设为激活-pos设为&lt;17-设置开关（右上角三段gsd-位置默认位置不熄火‘远离人的方向’）</li>
+<li>通信链接功能link（LNK）：通信设置  看的是遥控器输出信号大小而不是舵机</li>
+<li>模型功能model.sel：模型功能选择  <strong>选模型</strong></li>
+<li>normal常规布局  副翼数量看的是副翼舵机线的数量</li>
+<li>dualrate<br> 曲线设置 不用来设置舵量<br> 选通道 - 设曲线（注意别设反 应该离横轴近一些exp应该小于零-15~-30差不多）<br> 曲线在纵轴的截距标记舵机运动的幅度 设曲线是为了使飞机动作更加柔和 </li>
+<li>混控属于进阶功能 协调转弯<br> <strong>设置副翼数</strong> <strong>布局</strong></li>
+<li>display屏幕对比度</li>
+<li>servo 伺服器</li>
+</ul>
+</li>
+<li><p>日本手1右手左右副翼aileron2右手上下油门thrust3左手左右方向舵rudder4左右上下升降舵elevator</p>
+</li>
+<li><p>默认周边四个拨到外边是开机 顶部四个上拨</p>
+</li>
+<li><p>混控<br>  布局：双垂尾、升降副翼（升降同时控两个）<br>  补偿：减少转弯侧滑<br>  配合：启动电机和电打火<br>  蝴蝶刹车（滑翔机）</p>
+</li>
+<li><p>接收机安装到飞机上时<br>⭐为确保安全使用的注意事项</p>
+</li>
+<li><p>舵机+电子调速器（esc）电机受电调调配控制<br>  流程：遥控器-接收机-舵机<br>  电机（仅关注无刷电机即可）从马达里出来，三线<br>  供电：标准单个电池；电池代用线路BEC；（内置电调以及外BEC）<br>  电池：电芯片数越多 电压越高<br>   ⭐电池s数和对应电压  2s-7.4v-8.4v<br>                       3s<br>                       4s<br>                       6s（电流最低效率最高）</p>
+</li>
+</ul>
+</li>
+<li><h1 id="飞手需知"><a href="#飞手需知" class="headerlink" title="飞手需知"></a><strong>飞手需知</strong></h1><ul>
+<li><p>1.试飞前三项检查：<br> 1）⭐试舵（检查控制）：舵面-操控杆对应关系  拉杆向上飞 推杆向下飞<br> 2）测电：各种电池的标准电压（没电电压）和满充电压<br> 3）重心&#x2F;cg位置：重心位置是否正确决定飞机飞行是否稳定<br>            重心应在梁附近  机翼前缘和梁之间<br>            看厂商标识标记重心<br>  plus：检查发射器范围  操作幅度小 保持水平<br>  估计合适的空间  飞机飞慢些  充足的调整空间</p>
+</li>
+<li><p>2.起飞方式：滑跑、手抛<br>风向与起飞方向：起飞时不能顺风起飞，飞机来流速度偏小，随之而来是更长的滑跑距离，反之可感知场地环境，使飞机在距离飞手较近的地方起飞</p>
+</li>
+<li><p>3.中等油门到四分之三慢慢开 水平抛出 保持机翼水平 动作要小  突发情况减速保持飞机水平平稳</p>
+</li>
+<li><p>4.飞机倾斜时，下拉升降舵摇杆，机翼倾斜角度越大，拉升降舵的幅度就越大；转弯时不要一直转向操作，会导致尾旋。<br>   失速时不要突然加大油门 关闭油门飞机会自动调整</p>
+</li>
+<li><p>5.注意方向 飞机面对自己飞的时候方向是反的<br>  无法辨别飞行方向时轻打副翼摇杆看飞机倾斜方向</p>
+</li>
+</ul>
+</li>
+<li><h1 id="电动动力系统"><a href="#电动动力系统" class="headerlink" title="电动动力系统"></a><strong>电动动力系统</strong></h1><p>基本内容：螺旋桨-电机-电调（-接收机+电池） 要求可以画出硬件连接和信息传递的示意图<br>基本关系：飞机所需动力-螺旋桨大小-电机型号-电调</p>
+<ul>
+<li>1.螺旋桨：<br>区分油动桨和电动桨E：桨根比较厚（装载在振动更大的油动发动机上时可以更牢固，不容易断）<ul>
+<li>螺旋桨尺寸：花哨的动作需要大动力，大桨（照片  问用什么桨）<br>    9<em>6(寸)|小金星|1.4m|1.5kg|3s电池<br>    12</em>7|1.4m|2kg|4s电池<br>   20<em>12|2m|3.5kg|6s电池<br>   25</em>13(三公斤)|5m|4.5~26kg|油动</li>
+<li>桨越大，需要更大的推力，越配功率更大的发动机（直径）</li>
+<li>螺距（桨转一圈吃多少空气）越大，高速性能越好，加速越慢<br> <em>以上两点纯属泛泛而谈，还有更多的影响因素，只适用于较多数情况</em></li>
+<li>直观螺旋桨与活塞的关系认识（应该卡在横着的地方）：* 当螺旋桨卡住时可以让发动机熄火，利用风车效应，飞机落地不会使桨触地  启动的时候手拨方便</li>
+</ul>
+</li>
+<li>2.电机：(指的是无刷电机)<br>  型号：2212 圆柱体 定子直径22mm，盘线圈的高度12（直径越大  高度越扁转速越低）<br>  KV值：每提高1v电压，电机_一秒内空转状态下_转速提高多少<br>      3s：kv1250 4s：kv960 6s：kv750（了解,增加部件时kv值参考意义不大，型号不同kv值不同）<br>  9550公式：</li>
+<li>3.电调：主要看电流 允许的最大电流、电机的工作电流<ul>
+<li>电调配合电机的工作电流和工作电压：<ul>
+<li>电调允许电流&gt;电机工作电流<br>   电调允许电压&gt;点击工作电压<br>3s-40或50A  4s-60或80A 6s-80或100A（了解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>4.电池：种类 容量（什么器配备什么样的电池）标准&#x2F;满充电压<br>    使用电池百分之八十容量可以延长电池寿命</li>
+<li>5.发动机系统：气缸 排气管  化油器  机匣<ul>
+<li>气缸：肉体</li>
+<li>化油器：油气混合 液态油变成油滴状态 灵魂</li>
+<li>油箱构造：</li>
+<li>燃料组分<br>甲醇：燃料主要成分60%<del>85% 提供热值（化学能）<br>蓖麻油：润滑10%</del>25%<br>硝基甲烷：加力，提高输出功率（氮气加速）</li>
+<li>油箱里油管有两根；三孔正三角形布置；<ul>
+<li>怎么连：<ul>
+<li>长 上侧 接冲压管：<br>  部分废气由此进入油箱  增大内部压强 冲压作用+油箱运动产生的负压使油进入化油器<br>  废弃另一侧接排气管：一上一下有光孔  连接油管把废气排出</li>
+<li>短  下侧 吸油管（排气管对侧）：<br>  管口带有重锤：保证吸油管口一直在油箱最底端 避免断油<br>  化油器：把油气混合物传给气缸 连锥形嘴插油管 大圆孔用于进空气<br>  大风扇：发动机上止点</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- 如何启动一个甲醇发动机？
+  * 加油（把油加到发动机里）-吸油（把油细入化油器）-刷缸-点火-调试-灭车-清洗
+  *加油：
+   + 使用油泵
+   + 注意事项：
+    - 油泵两根油管**口**不能粘灰尘 否则会污染汽油
+    - 加油技巧（虹吸原理__油泵低于油箱油面利用重力使吸上来的油自动落入__ 手速）
+   + 使用方法：
+    - 吸油管放入油桶
+    - 加油管连接至加油口（在排气管的对侧）
+    - 冲压管：连接化油器 观察冲压管有气泡或油说明油箱已满停止加油
+    ![吸油前](/img/航模/吸油前.png)
+    ![吸油后](/img/航模/吸油后.png)
+    - __加油时油管接法示意图 发动机结构图中油的流向__
+  * 吸油
+   + 风门开大 大拇指堵住风门（保证怠速状态下转速低 进油少 风门处制造低压区）转动螺旋桨（左右在活塞间转）
+  * 涮缸：
+    + ⭐目的：用油浸润气缸，同时保证气缸里没有存油（淹缸）活塞压缩气缸中的空气 气体可压缩性好 只有空气时压缩顺畅 如果有液体启动时不顺 螺旋桨转不动
+    + ⭐方法：掌握飞机姿态 油流方向
+      - 吸油 把机头仰起 飞机抬头 转动螺旋桨 油从化油器流进气缸 再进入机匣
+      - 把飞机倒过来 转动螺旋桨 油进机匣 （机匣在气缸下部）
+      - 转动螺旋桨感受缸内油压 确认油进入气缸
+      - 飞机侧过来 排气管在下 转动螺旋桨 油进排气管
+      - 保持飞机不滚转 扬起机头 转动螺旋桨 油出排气管
+    其时是左右左右转螺旋桨
+  * 点火
+   + 点火前
+    - 启动器
+       * 一般使用3s电池 缸压大会用4s电池
+       * __怼在(住)__桨罩上（不要怼歪了） __注意保持力线是直的！__ 尤其注意不要上下歪（左膝抬高右膝点地）否则会效果不好、抖动、安全隐患
+       ![启动器](/img/航模/启动器.png)
+       * 注意电池顺到启动器后面 __远离桨平面__
+       * 不要误触开关
+       ![开关](/img/航模/开关.png)
+    - 火头电
+      * 握法 ![握法1](img/航模/握法1.png)
+             ![握法2](img/航模/握法2.png)
+      * __推出__内芯/把外边的套拉下来（就是最里侧的正极 外侧三个片儿是负极） __包住__火头 放下负极（外壳）此时已固定 扶住火头电 插入发动机点火 躲开桨的外轮廓（右膝放低左膝拿高 直上直下 垂直拿开）
+      * 点燃后会听到爆燃声 听到发动机/螺旋桨转速稳定后再拿下
+      * 拿下时抬起负极
+    - 扶飞机
+      * 人蹲在飞机左边 躲开排气管
+      * 左手抓住左翼根前缘，右手把住机尾
+      * **左手向后**用力，防止飞机冲出去
+      * **右手向前**用力，和启动器同学较劲，怼住启动器
+      * __没让松手不许松手__（可能要多次试验），松手前和操纵手眼神确认
+   + 点火时：
+     - 一个人右手启动器，左手火头电（一个人拿着遥控器）；一个人扶飞机
+     - 启动器怼住桨罩后开始启动，注意听爆燃声，连续爆燃后可以脱离
+     - 转速稳定以后（靠耳朵听），拿走火头电，躲开螺旋桨
+     - 操纵手**一般0%~15%油门启动**(小车)，如果打不着火中大车启动
+     - 扶飞机不要撒手
+  + 点火后：
+    - 火头电揣兜里，启动器拿开，开始准备调试发动机
+    - 如果打着了，操纵手慢慢推大车，保持一段时间检查转速，然后回到小车，快速加油减油
+    - 如果没打着 再次尝试或中大车启动
+    - 扶飞机不松手
+- 调试（了解大油针小油针即可） 
+  + 调试发动机的本质：控制油气混合比（组成）
+  组成越优 越稳定 不易熄火
+  调试大小油针本质：控制进油量/油气混合物的量（油气混合物的量）去配合进气量量越大 热值越高动力越大
+  给油：小油针撤出进油量增加/风门进or气口开大进气量增加→油气混合物变多 发动机动力增大
+  参考：化油器的组成及工作原理
+  + 旋转控制风门开闭 进风量增加的同时进油量增加 小油针插入时进油量减少同时进风量减少 控制进油量去配合进气量
+  + 油气比例是影响发动机能否正常运行最重要的因素 通过大油针（管大车 调最大转速）和小油针（管小车和怠速稳不稳定 小车打不着火/突然加油时转速上不去-转速调大有响应延迟）对应调节富油贫油 __文字描述状况知道要拧谁__
+  + 调试方法
+   - 大油针：先关死 然后开两圈半 打着后试着慢慢拧或每次拧15° 听转速 若上升则继续拧（一开始富油往贫油拧 听转速来回拧）
+   - 小油针：启动后保持怠速10s猛加油 通过听声音判断是否贫油/富油 或者先往一个方向拧15°~30°
+   + 灭车
+     - 调试或飞行完毕后，操纵手收小油门，拨动遥控器上灭车开关，风门关闭，发动机富油，工作停止
+     熄火开关-遥控器
+     - **熄火开关的本质：风门关死，无空气进入（化油器/气缸） →发动机熄火（富油）**
+     - 发动机停止工作后 __不要碰气缸 不要碰排气管__ 烫手
+     -（汽油）螺旋桨停止转动后 扶飞机的同学可以自行松手 其余时间严禁松手
+    ![油箱结构和油路](/img/航模/油箱结构和油路.png) 
+    ![油箱结构和油路](/img/航模/油箱结构和油路1.png) 
+   + 后续
+     - 吸出多余汽油
+     - 无水乙醇清洗发动机：往机匣内喷无水乙醇 流程与涮缸相同 倒出时观察酒精是否清澈 若否则重复至乙醇清澈为止
+     - 先关飞机后关遥控器
+     - 用乙醇清洗飞机表面：排气管吹出的蓖麻油 未完全燃烧的汽油 废弃ect在排气管后的机身
+</code></pre>
+<ul>
+<li>6.发动机理论<ul>
+<li>油箱：<br>  冲压管：连着排气管 使部分废气进入油箱增大压强 使油箱里的油进入化油器<br>  重锤：使吸油管始终在油面一下</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>电气系统</strong><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A51.png" alt="安全须知1"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A52.png" alt="安全须知2"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%89%E7%B1%BB%E7%94%B5%E6%B1%A0.png" alt="三类常用电池"></p>
+<ul>
+<li>锂电池：（最远）黑负红正<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E6%B1%A01.png" alt="锂电池"><br> 中间的黑线每条连一正一副<br> 平衡头孔数&#x3D;电池数+1</li>
+<li>⭐读电池参数<br> 放电倍率：倍率（c）×电池容量（毫安时mah）&#x3D;最大放电允许电流（mA）<br> s串联p并联3s2p三块电池串联后两两并联</li>
+<li>⭐测电操作<br>用平衡头（白头）<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>数据是每一片电池的数据</li>
+<li>电调：根据控制信号调节电动机的转速<br>有刷电机与无刷电机：区别在于输出线 无刷：三根线（三项脉冲直流电）输出 有刷：一根线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%831.png" alt="电调结构"><br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>信号线：白红黑三根线 红线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%833.png" alt="UBEC"><br>BEC集成到电调上 UBEC独立<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%832.png" alt="电调结构"></li>
+<li>接收机<br><img src="/img/%E8%88%AA%E6%A8%A1/%E6%8E%A5%E6%94%B6%E6%9C%BA.png" alt="航模接收机"><ul>
+<li>天线尽量远离对方 一个竖直一个水平最好</li>
+</ul>
+</li>
+<li>舵机<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA.png" alt="舵机"><ul>
+<li>中立位：保证未接收到信号时舵面也保持在中立位<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA2.png" alt="舵测"></li>
+<li>舵测：舵机会跟着舵测旋转旋转起来（手动）<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA3.png" alt="舵机参数"></li>
+<li>舵机参数：<br> 速度：4.8v工作电压下 转过60°需要0.12s<br> 扭矩：4.8v工作电压下 1cm舵机摇臂处可以拉动1.6公斤的东西<br> 齿轮材质：变速齿轮的材质  金属材质可以吃力更大 常用于大扭矩舵机 但是重量大</li>
+</ul>
+</li>
+<li>线材：<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BA%BF%E6%9D%90.png" alt="线材"><ul>
+<li>针是公头 套是母头（看的是金属部分） 黄色棒状是香蕉头（公母头去了橡胶套）</li>
+<li>电线：漆包线相较于硅胶线更轻 但是更加脆弱易断 也不好用<br> 绕电机线圈</li>
+<li>AWG值越大 线越细<br> 通常以绝对安全的值考虑 航模通电时间短通常使用偏细的线也没啥问题~</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>小金星制作</strong></p>
+<ul>
+<li>机翼有一个上反角-怎么画肋台？</li>
+<li>机翼整体加强：加强肋+强材料翼梁+腹板上下粘接</li>
+<li>三角块不要粘在翼肋上</li>
+<li>D 型盒儿</li>
+</ul>
+</li>
+<li><h1 id="一些名词-amp-amp-tips"><a href="#一些名词-amp-amp-tips" class="headerlink" title="一些名词&amp;&amp;tips"></a><strong>一些名词&amp;&amp;tips</strong></h1><p>   ·舵效：飞机动作<br>   ·提力 降力<br>   ·油门越高，电机转速越高<br>   ·电调&#x2F;ESC （electric speed control）<br>   ·二冲程汽油发动机（新鲜空气来自机匣）<br>   ·柴油  甲醇发动机（压燃实现燃料化学能的转化）<br>   ·怠速：利用抬升力 慢慢碰地<br>   · stabilator 全动式水平尾翼<br>   · vertical stabilizer 垂直（尾翼）安定面<br>   · antiservo tab 反作用伺服调整片（反补偿片）：减轻控制压力和保持全动式水平尾翼位于期望位置的配平装置 迫使调整片与自身同时同向运动<br>   · azimuth stabilizer纵舵机<br>   ·horizontal stabilizer：水平安定面<br>   ·elevator：升降舵<br>   ·rudder：方向舵<br>   ·trim tab：配平调整片<br>   ·荷兰滚dutch roll：指当升力大于重力的时候，有规律的大幅度摇摆机翼，从后面看飞机就像钟摆一样，从上面看就是蛇行路线的现象。荷兰滚类似于简谐振动，规律性强，实战意义不大，只是用于测试；当升力大于重力的时候，有规律的大幅度摇摆机翼，从后面看飞机就像钟摆一样，从上面看就是蛇行路线的现象。yall-roll滚转稳定性强而偏航稳定性弱-increased drag due to increased lift-same motion in the opposite direction<br>   ·普加乔夫眼镜蛇机动：是著名的过失速机动动作。机动过程中飞行员快速向后拉杆使机头上仰至110度～120度之间，形成短暂的机尾在前，机头在后的平飞状态，然后推杆压机头，再恢复到原来水平状态。机动时飞机进入的速度约为425公里&#x2F;小时，飞机以超过148公里&#x2F;小时的速率减速，然后减速到110公里&#x2F;小时，这个动作仅使飞机承受3.5～4g的过载，在整个机动过程中，飞机的飞行高度几乎没有什么变化。</p>
+</li>
+</ul>
+<p>一些问题<br>油泵使用方面的注意事项、加油技巧<br>锂电池的各种电压<br>3s平衡电池上几个口<br>发动机启动有3个注意安全的点  保持力线直 远离桨平面 不要放飞机 +手不要放气缸和排气管<br>机翼主要的承矩结构 翼梁<br>记忆主要的承扭结构 D盒（飞机前缘部分翼条</p>
+]]></content>
+      <categories>
+        <category>学点</category>
+      </categories>
+      <tags>
+        <tag>飞机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python-library</title>
+    <url>/2023/%E5%AD%A6%E7%82%B9/python-library/</url>
+    <content><![CDATA[<p>模块引入名称可以自定义：<code>import lib as A</code><br>可以在命令行里使用<code>dir</code>命令来看具体有哪些函数<code>help</code>查询具体用法</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; import library</span><br><span class="line">&gt;&gt;&gt; dir(library)</span><br><span class="line">&gt;&gt;&gt;help(library,def)</span><br></pre></td></tr></table></figure>
+
+<p>###Numpy </p>
+<ul>
+<li>array<br>可以承接python的<code>list</code></li>
+</ul>
+<p>###Pandas<br>数据处理工具，可以用来对于格式化的数据文件（excel表格&#x2F;csv格式文件ect）进行各种操作</p>
+<ul>
+<li><code>DataFrame</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学点</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python基础</title>
     <url>/2023/%E5%AD%A6%E7%82%B9/python%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<p>python基础都没有的我真的伤不起呀呜呜 浅读一下《python编程：从入门到实践》顺手记点东西~希望以后能在脑子里留一点嘿嘿</p>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
+<h1 id="字符串-amp-amp-列表"><a href="#字符串-amp-amp-列表" class="headerlink" title="字符串&amp;&amp;列表"></a>字符串&amp;&amp;列表</h1><p>列表打印默认打印一行，包括方括号和引号<br>一行输出列表 以空格隔开</p>
 <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> ele <span class="keyword">in</span> <span class="symbol">list:</span></span><br><span class="line">      print(ele,<span class="keyword">end</span>=<span class="string">&#x27; &#x27;</span>)</span><br></pre></td></tr></table></figure>
-<p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除 remove只删除首个指定元素 若要检查或者全部删除 需要使用for循环<br><code>.pop(place)</code>指定位置弹出元素<br><code>.sort()</code><br><code>.sort(reverse=True)</code><br><code>print(sorted(listname))</code></p>
+<p><code>print[起点:终点:步长]</code>字符串切片<br><code> .title()</code>打印列表首字母大写<br><code>.append(``)</code>列表末尾插入元素<br><code>.insert(place,element)</code>指定位置插入元素<br><code>del listname[place]</code>指定位置删除元素<br><code>.remove(``)</code>指定元素删除 remove只删除首个指定元素 若要检查或者全部删除 需要使用for循环<br>指定位置弹出元素<code>.pop(place)</code><br>元素字典序排序<code>.sort()</code><br>元素字典序反排序<code>.sort(reverse=True)</code><br>临时排序<code>print(sorted(listname))</code><br>判断字串是否在原字符串中</p>
 <h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h1><ul>
 <li>如果条件语句中作为判断条件的是一个整形，则它的值为0时等同于布尔型的False，其余为True</li>
 <li>布尔型操作符xor</li>
@@ -95,13 +487,26 @@
 <li><code>not</code>对表达式进行取反</li>
 <li><code>for</code>除了直接标定次数以外还可以用<code>range</code>和<code>xrange</code>；前者返回一个新的数字list，包含指定范围内的数字；而后者返回一个迭代器，这种方式效率更高。<br> - 二者下标均从0开始<br> - 前闭后开（起点，终点，步长）<br> - <code>for i in range():</code></li>
 <li><code>while 条件：</code><br> - 和循环语句同级可以使用else语句 每次循环开始阶段的判断表达式都可以认为是一个if语句。</li>
-<li>函数<code>def name(x,y....)</code><br> - ()内可以为空 在代码中直接调用即可，有几个未知数，在代码中相应应当输入多少值。<br> - 返回值return+返回命令</li>
 </ul>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><ul>
+<li>函数<code>def name(x,y....)</code><br> - ()内可以为空 在代码中直接调用即可，有几个未知数，在代码中相应应当输入多少值。<br> - 返回值return+返回命令 </li>
+<li>当一个函数名对应多个函数时，输出时会问<code>A or B?</code>此时可以使用<code>ctrl+左键</code> 点击那个函数 可以跳转到函数的声明位置<br>如果想要调用某一个模块所有函数的变量和对象 可以使用<code>from xxx import def</code><br>引入名称支持自定义 或者在不同的情况下要引入不同的模块 但后续要对它进行相同的操作<br>  -注意：当某一个模块第一次被加载的时候会运行一遍代码来进行初始化，如果这之后被再次加载，就不会再次运行初始化，所以这些模块里的布局变量都是单例模式（singleton）的</li>
+</ul>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="comment"># game.py</span></span><br><span class="line"><span class="comment"># import the draw module</span></span><br><span class="line"><span class="keyword">if</span> <span class="symbol">visual_mode:</span></span><br><span class="line">   <span class="comment"># in visual mode, we draw using graphics</span></span><br><span class="line">   import draw_visual as draw</span><br><span class="line"><span class="symbol">else:</span></span><br><span class="line">   <span class="comment"># in textual mode, we print out text</span></span><br><span class="line">   import draw_textual as draw</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    result = play_game()</span><br><span class="line">    <span class="comment"># this can either be visual or textual depending on visual_mode</span></span><br><span class="line">    draw.draw_game(result)</span><br></pre></td></tr></table></figure>
+
 <p>###类<code>class</code>和对象<code>object</code></p>
 <ul>
 <li>对象是对变量和函数的封装，是一个单一实体，对象从类中获得他们的变量和函数，类本质上是一个创建对象的模板</li>
 <li>可以以一个类为模板创建多个对象，也可以更改某个对象的某个变量。<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">      variable = <span class="string">&quot;blabla&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">def</span> <span class="title function_">my_function</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">             print(<span class="string">&quot;This is a message inside the class.&quot;</span>)</span><br><span class="line"></span><br><span class="line">my_object = <span class="title class_">MyClass</span>()</span><br><span class="line">print(my_object.variable)</span><br><span class="line"><span class="comment"># blabla</span></span><br><span class="line">my_object2 = <span class="title class_">MyClass</span>()</span><br><span class="line">my_object2.variable = <span class="string">&quot;lalalala&quot;</span></span><br><span class="line">print(my_object2.variable)</span><br><span class="line"><span class="comment"># lalalala</span></span><br><span class="line">my_object.my_function()</span><br><span class="line"><span class="comment"># This is a message inside the class.</span></span><br></pre></td></tr></table></figure></li>
 <li><code>init()</code>函数：是类的初始化函数，默认可以只有<code>self</code>函数，也可以传入别的参数进行初始化。<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">NumberHolder</span>:</span><br><span class="line">       <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params"><span class="variable language_">self</span>, number</span>):</span><br><span class="line">             <span class="variable language_">self</span>.number = number</span><br><span class="line">  </span><br><span class="line">holder1 = <span class="title class_">NumberHolder</span>(<span class="number">19260817</span>)</span><br><span class="line">print(holder1.number)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h1><ul>
+<li>字典使用键值对（key-value）工作 每一个<code>key</code>对应一个<code>value</code></li>
+<li>&#96;Dict[key]&#x3D;val</li>
+<li>字典建立<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">phoneNumber = &#123;&#125;</span><br><span class="line"><span class="comment"># 新建一个字典</span></span><br><span class="line">phoneNumber[<span class="string">&quot;John&quot;</span>] = <span class="number">11111111111</span></span><br><span class="line">phoneNumber[<span class="string">&quot;Wick&quot;</span>] = <span class="number">22222222222</span></span><br><span class="line">phoneNumber[<span class="string">&quot;Smith&quot;</span>] = <span class="number">33333333333</span></span><br><span class="line"><span class="comment"># 写入key-value</span></span><br><span class="line"><span class="comment"># 或者：</span></span><br><span class="line">phoneNumber = &#123;</span><br><span class="line"><span class="string">&quot;John&quot;</span>: <span class="number">11111111111</span>,</span><br><span class="line"><span class="string">&quot;Wick&quot;</span>: <span class="number">22222222222</span>,</span><br><span class="line"><span class="string">&quot;Smith&quot;</span>: <span class="number">33333333333</span></span><br><span class="line">&#125;</span><br><span class="line">print(phoneNumber)</span><br><span class="line"><span class="comment"># &#123;&#x27;John&#x27;: 11111111111, &#x27;Wick&#x27;: 22222222222, &#x27;Smith&#x27;: 33333333333&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li>遍历字典（<code>name</code>承接<code>key</code>） <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> A,B... <span class="keyword">in</span> dict.items():</span><br><span class="line">   print(<span class="string">&quot;%s %d&quot;</span>  % (A,B))</span><br></pre></td></tr></table></figure></li>
+<li>删除字典中的键值对<code>.pop(key)</code>&#x2F;<code>del dict[&quot;key&quot;]</code></li>
+<li>添加键值对<code>dict[&#39;key&#39;]=value</code></li>
 </ul>
 ]]></content>
       <categories>
@@ -141,255 +546,6 @@
 ]]></content>
       <tags>
         <tag>resolution</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>航模基础</title>
-    <url>/2023/%E5%AD%A6%E7%82%B9/%E8%88%AA%E6%A8%A1%E5%9F%BA%E7%A1%80%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>寒假航模队培训啦！！</p>
-<span id="more"></span>
-<ul>
-<li><h1 id="选择适合自己的航模"><a href="#选择适合自己的航模" class="headerlink" title="选择适合自己的航模"></a><strong>选择适合自己的航模</strong></h1><ul>
-<li><ol>
-<li>三通道（主桨转速调上下 方向舵左右转向 尾桨改变旋转方向调前后）：尽量简洁&amp;&amp;三通道机翼形成上反角 便于飞行时保持平衡<br> 四通道（油门&#x2F;电子调速器调上下 升降舵调前后 副翼舵机左右平移 方向舵左右方向）<br> ⭐飞机的通道：1左副翼，2升降舵，3油门，4方向舵&#x2F;陀螺仪，5起落架，6右副翼</li>
-</ol>
-</li>
-<li>2.dihedral【航】上反角、下反角<br><img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%8A%E5%8F%8D%E8%A7%92.png" alt="上反角"></li>
-<li>3.选择低速机  增加反应时间</li>
-<li>4.泡沫飞机开始  很容易修  零件比较少</li>
-<li>5.零件容易买到</li>
-<li>6.燃料发动机 动力组件复杂不要 需要经验调试<br>建议electric： easy to maintain</li>
-<li>7.要能看见  打飞机更容易看到方向 但是速度太快 需要太多空间<br> proper size-for your flying space</li>
-<li>8.安装：<ul>
-<li>机翼安装：飞翼安装差异主要是为了达到更好的飞行效果<br>     + 初始时存在安装角 angle of incidence<br>下单翼：飞机的机翼安装在机身下部，位于机身轴线水平面的下方 电机一般在机体后<br> 很安全 强度高 阻力小 升力大 飞翼可快可慢  碰到地面时不会很快坏掉 更好保护元件 机动性好<br>中单翼：飞机的机翼安装在机身中部<br> 重心在中间 平衡好可以在各个角度控制好<br>上单翼：机翼位于机身轴线水平面的上方<br> 低重心 上反角 每次起飞时会快速平衡可以自己调整好重心 升力大 稳定性好<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%8A%E4%B8%AD%E4%B8%8B%E7%BF%BC.png" alt="上单翼 中单翼 下单翼"></li>
-<li>螺旋桨位置：<br> 腰推式：尾推螺旋桨中后置<br> 前拉式：电子元件在机头  飞行更平稳  性能更好<br> 涵道风扇电机：可以飞的很快</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h1 id="飞机组成"><a href="#飞机组成" class="headerlink" title="飞机组成"></a><strong>飞机组成</strong></h1><p>  <img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E7%9A%84%E4%B8%BB%E8%A6%81%E9%83%A8%E4%BB%B6%E5%92%8C%E6%93%8D%E7%BA%B5%E9%9D%A2.png" alt="飞机的主要部件和操纵面"></p>
-<ul>
-<li>1.飞翼：<ul>
-<li>无机舱会单翼 若使用机舱则需要左右机翼拼接在机舱 选用质量轻强度大的铝销 会有副销</li>
-<li>机翼相关参数：<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B01.png" alt="机翼相关参数1"><br>   使用最多：平均气动弦长（展弦比常用的是平均气动弦长）<br>   展弦比：具体代表了<br>   翼载荷对应越大，需要的材料强度越强。<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B02.png" alt="机翼的相关参数2"><br>   前缘受力最大 与空气直接接触<br>   <strong>前缘加强：方口打磨（没听懂</strong><br>   c.g.(%MAC)从平均气动弦的前端算起所占长度百分比<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B03.png" alt="机翼相关参数3"><br>   后掠角越大 速度可以越大 后移也有助于后移失速速度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%BA%E7%BF%BC%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B04.png" alt="机翼相关参数4"><br>   安装角是什么一定要记住！上反角可以增加航模稳定性</li>
-<li>翼型：两大参数主要为最大弯度和最大厚度<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B.png" alt="翼型"><br>   [point]前后缘是直线  弦长实质是两平行线的距离<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E6%9C%80%E5%A4%A7%E5%8E%9A%E5%BA%A6.png" alt="最大厚度"><br>   [point]中弧线用于描述弯度，会影响飞机升力的参数<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%AD%E5%BC%A7%E7%BA%BF.png" alt="中弧线"><br>   [point]最大厚度可假设为在机翼前缘百分之二十五处</li>
-<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%841.jpg" alt="机翼"><br><strong>需要了解翼肋、翼梁、腹板和前后缘是什么</strong><br><strong>机翼实用知识是考试内容必须掌握</strong><br>翼梁：c型梁&#x2F;弓形梁+<br>蒙皮skin：受力+减小阻力+使气动外形更光滑<br>襟翼wing flap：转轴<br>副翼alleron：转轴+可作为襟翼或减速板<br>翼肋ribs：横向部件+承受+支撑加强蒙皮<br>前缘会有加强横条 与襟翼副翼相连空出来会有后缘<ul>
-<li>分类：<br>1.对称：<br>2.半对称：机翼上表面弯而下表面比较平直；速度会快 而且横滚直爬比较灵活  不需要打太多升降舵 扁平底 抵消负升力：推操纵杆<br>3.凹凸翼型：飞机小  低速大升力  速度慢稳定性强  低速性能好</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>2.舵面：<br>   ·⭐升降舵：<strong>拉杆往后上翘提供升力（抬头起飞） 推杆往前下压提供降力（低头俯冲）</strong><br><img src="/img/%E8%88%AA%E6%A8%A1/%E5%8D%87%E9%99%8D%E8%88%B5.png" alt="升降舵"><br>   ·副翼：绝大多数时间是同时以相同幅度相反方向移动  做横滚运动  滚转力矩 可以倾斜飞机<br> <strong>example.如果飞机向往右转，那么左翼的升力就要比右翼大，左翼升力变大，左边的副翼需要往下偏一点，或者右边的副翼往上偏一点</strong>  <strong>往哪转哪边向上</strong><br>  ·⭐方向舵：控制航向 与飞机飞行方向同向时左右同一方向运动 加上反角可以实现小角度滚转（同副翼<br>  <strong>飞机要想转弯，可以动方向舵。方向舵往右偏，空气给它的力就是往左的，机尾就能往左偏，飞机也就往右转了。</strong><br>   ·舵机加需要加强翼肋 或者放舵机架 不然会断<br>   *⭐飞机的空间运动⭐姿态描述<br><img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E7%9A%84%E7%A9%BA%E9%97%B4%E8%BF%90%E5%8A%A8.png" alt="飞机的空间运动"></li>
-<li>3.尾翼：有两种不同的安定面<ul>
-<li>水平尾翼：需要控制 改变上下运动 比赛机基本上都有翼型</li>
-<li>垂直尾翼：方向稳定性 改变偏航角度</li>
-</ul>
-</li>
-<li>4.螺旋桨：实际相当于机翼产生升力从而产生推力<ul>
-<li>旋转式电机 由于具有一定速度</li>
-<li>桨叶拱形或弯曲 类似于机翼上表面 其余平坦 类似于机翼下表面<br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B01.png" alt="螺旋桨工作原理和几何参数"><br>   桨叶角单位为度 一般会选取特定的点进行桨叶角的测量 弦线通常由螺旋桨的桨叶面开始画<br>   螺旋角由桨叶角决定：桨叶角在螺旋桨本身不变时是一个定值 与螺旋桨本身成负相关<br>   低速与高速性能不同 固定螺旋桨难以达到兼容–一般选取螺旋桨直径和螺距以及桨叶面积（最大宽度&#x2F;投影面积）为参数<ul>
-<li>直径：越长越好</li>
-<li>螺距：<img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B02.png" alt="螺旋桨的几何螺距"><br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B03.png" alt="螺旋桨的有效（实际飞行中走过的距离）螺距"></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B04.png" alt="作用在螺旋桨的载荷"><br>  最重要的力是拉力和反扭力 但反扭力较小 但如果飞机轻 材料强度低 则需要考虑在内<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E5%92%8C%E5%87%A0%E4%BD%95%E5%8F%82%E6%95%B05.png" alt="1"></li>
-<li>螺旋桨的转速rpm：是与电机反复迭代配合的过程<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%9E%BA%E6%97%8B%E6%A1%A8%E6%8B%89%E5%8A%9B%E8%AE%A1%E7%AE%97%E5%99%A8.png" alt="螺旋桨拉力计算器"></li>
-</ul>
-</li>
-<li>结构名称：<ul>
-<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%842.jpg" alt="机翼"></li>
-<li><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BB%93%E6%9E%843.jpg" alt="尾翼"></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h1 id="空气动力学简介"><a href="#空气动力学简介" class="headerlink" title="空气动力学简介"></a><strong>空气动力学简介</strong></h1><ul>
-<li>1.飞机飞行原理<ul>
-<li>升力来源：动力来自于空气流动 空气流动来自于螺旋桨<br>1.伯努利原理：飞机为什么能够飞上天？因为机翼受到向上的升力。飞机飞行时机翼周围空气的流线分布是指机翼横截面的形状上下不对称，机翼上方的流线密，流速大，下方的流线疏，流速小。由伯努利方程可知，机翼上方的压强小，下方的压强大。这样就产生了作用在机翼上的方向的升力 机身越长，机翼上的空气要跨越的距离更长，流动速度更快，由此机翼上面产生低压区，把飞机“吸进去”。<br>   重要推论：等高流动时，流速大，压力就小。<br>   流体运动的动能和势能相互转换，但总的能量为一常数，不变守恒<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B.png" alt="伯努利方程"><br>   通常情况下，可以测量总压、动压，从而计算得出静压<br>   <img src="/img/%E8%88%AA%E6%A8%A1/%E5%BC%80%E6%94%BE%E6%B5%81%E4%BD%93%E4%B8%AD%E7%9A%84%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B.png" alt="开放流体中的伯努利方程"><br>   封闭管道内如果管道足够大可以视作敞开体系<br>2.牛顿运动定律：物体发生作用时产生反作用力，由此产生压强差</li>
-</ul>
-</li>
-<li>2.失速：机翼上方空气流动失常；<br>  应对：<ul>
-<li>1.控制气流速度：起飞后慢慢拉升飞机（减小攻角）-降低油门-推平升降舵-动力减小-自然降落（机头重量大会自然先降落）</li>
-<li>2.保持平衡（失速时应当使控制杆中立）</li>
-<li>3.飞的太慢容易失速</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>飞机飞行时的受力</strong></p>
-<ul>
-<li><img src="/img/%E8%88%AA%E6%A8%A1/%E9%A3%9E%E6%9C%BA%E9%A3%9E%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%8F%97%E5%8A%9B.png" alt="飞机飞行中的受力"><br>  飞机的升力和阻力是由飞机外形决定的 由此可以计算飞机的升阻比<br>  推重比与几何外形没什么关系 推重比<br>  首先可以由重力推知升力-是否需要强机动性？（是则需强推力，若推力有限需要尽量减少阻力）-限制？推得阻力和推力-平飞时，升力等于重力，阻力等于推力；   </li>
-<li>升力：<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E7%9B%B8%E5%85%B3%E7%9A%84%E6%B0%94%E5%8A%A8%E5%8F%82%E6%95%B0.png" alt="翼型相关的气动参数"><br>  [point]该图的xy轴不是竖直方向和水平方向<br>         1.来流方向一定是飞机的飞行方向<br>         2.迎角&#x2F;攻角angle of attack：翼弦线和来流方向所夹的锐角<br>         3.入射角&#x2F;安装角：<br>         4.爬升角：<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%861.png" alt="翼型升力的产生原理1"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%862.png" alt="翼型升力的产生原理2"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%863.png" alt="翼型升力的产生原理3"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%861.png" alt="升力产生原理解读误区1"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%862.png" alt="升力产生原理解读误区2"><br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%BF%BC%E5%9E%8B%E5%8D%87%E5%8A%9B%E7%9A%84%E4%BA%A7%E7%94%9F%E5%8E%9F%E7%90%863.png" alt="升力产生原理解读误区3"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%8D%87%E5%8A%9B%E5%85%AC%E5%BC%8F%E5%92%8C%E5%8D%87%E5%8A%9B%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0.png" alt="升力公式和升力影响因素"><br> 升力系数：对于同一架飞机，影响升力系数最重要的参量是迎角，采用仿真计算得到右侧曲线（为什么不是迎角越大升力越大？并非升力系数越大飞行效果越好 攻角为零？转折点（失速点）此后拉杆飞机再抬头飞机会不升反降<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%A2%9E%E5%8D%87%E8%A3%85%E7%BD%AE.png" alt="增升装置"><br> 简单襟翼可理解为增加弯度大的翼型<br> 富勒襟翼会增加机械复杂度 要搭建四杆结构（机械原理 或许会带来更大副作用<br> 推迟失速速度（使失速点靠后）来增加迎角 </li>
-<li>阻力：<br>  ⭐1.阻力的分类<br>  <img src="/img/%E8%88%AA%E6%A8%A1/%E7%A9%BA%E6%B0%94%E7%B2%98%E6%80%A7%E4%B8%8E%E6%91%A9%E6%93%A6%E9%98%BB%E5%8A%9B.png" alt="空气粘性与摩擦阻力"></li>
-</ul>
-</li>
-<li><h1 id="遥控系统"><a href="#遥控系统" class="headerlink" title="遥控系统"></a><strong>遥控系统</strong></h1><ul>
-<li>默认周边四个拨到外边是开机 顶部四个上拨</li>
-<li>舵机+电子调速器（esc）电机受电调调配控制<br>  流程：遥控器-接收机-舵机<br>  电机（仅关注无刷电机即可）从马达里出来，三线<br>  供电：标准单个电池；电池代用线路BEC；（内置电调以及外BEC）<br>  电池：电芯片数越多 电压越高<br>   ⭐电池s数和对应电压  2s-7.4v-8.4v<br>                       3s<br>                       4s<br>                       6s（电流最低效率最高）</li>
-</ul>
-</li>
-<li><h1 id="飞手需知"><a href="#飞手需知" class="headerlink" title="飞手需知"></a><strong>飞手需知</strong></h1><ul>
-<li><p>1.试飞前三项检查：<br> 1）⭐试舵（检查控制）：舵面-操控杆对应关系  拉杆向上飞 推杆向下飞<br> 2）测电：各种电池的标准电压（没电电压）和满充电压<br> 3）重心&#x2F;cg位置：重心位置是否正确决定飞机飞行是否稳定<br>            重心应在梁附近  机翼前缘和梁之间<br>            看厂商标识标记重心<br>  plus：检查发射器范围  操作幅度小 保持水平<br>  估计合适的空间  飞机飞慢些  充足的调整空间</p>
-</li>
-<li><p>2.起飞方式：滑跑、手抛<br>风向与起飞方向：起飞时不能顺风起飞，飞机来流速度偏小，随之而来是更长的滑跑距离，反之可感知场地环境，使飞机在距离飞手较近的地方起飞</p>
-</li>
-<li><p>3.中等油门到四分之三慢慢开 水平抛出 保持机翼水平 动作要小  突发情况减速保持飞机水平平稳</p>
-</li>
-<li><p>4.飞机倾斜时，下拉升降舵摇杆，机翼倾斜角度越大，拉升降舵的幅度就越大；转弯时不要一直转向操作，会导致尾旋。<br>   失速时不要突然加大油门 关闭油门飞机会自动调整</p>
-</li>
-<li><p>5.注意方向 飞机面对自己飞的时候方向是反的<br>  无法辨别飞行方向时轻打副翼摇杆看飞机倾斜方向</p>
-</li>
-</ul>
-</li>
-<li><h1 id="电动动力系统"><a href="#电动动力系统" class="headerlink" title="电动动力系统"></a><strong>电动动力系统</strong></h1><p>基本内容：螺旋桨-电机-电调（-接收机+电池） 要求可以画出硬件连接和信息传递的示意图<br>基本关系：飞机所需动力-螺旋桨大小-电机型号-电调</p>
-<ul>
-<li>1.螺旋桨：<br>区分油动桨和电动桨E：桨根比较厚（装载在振动更大的油动发动机上时可以更牢固，不容易断）<ul>
-<li>螺旋桨尺寸：花哨的动作需要大动力，大桨（照片  问用什么桨）<br>    9<em>6(寸)|小金星|1.4m|1.5kg|3s电池<br>    12</em>7|1.4m|2kg|4s电池<br>   20<em>12|2m|3.5kg|6s电池<br>   25</em>13(三公斤)|5m|4.5~26kg|油动</li>
-<li>桨越大，需要更大的推力，越配功率更大的发动机（直径）</li>
-<li>螺距（桨转一圈吃多少空气）越大，高速性能越好，加速越慢<br> <em>以上两点纯属泛泛而谈，还有更多的影响因素，只适用于较多数情况</em></li>
-<li>直观螺旋桨与活塞的关系认识（应该卡在横着的地方）：* 当螺旋桨卡住时可以让发动机熄火，利用风车效应，飞机落地不会使桨触地  启动的时候手拨方便</li>
-</ul>
-</li>
-<li>2.电机：(指的是无刷电机)<br>  型号：2212 圆柱体 定子直径22mm，盘线圈的高度12（直径越大  高度越扁转速越低）<br>  KV值：每提高1v电压，电机_一秒内空转状态下_转速提高多少<br>      3s：kv1250 4s：kv960 6s：kv750（了解,增加部件时kv值参考意义不大，型号不同kv值不同）<br>  9550公式：</li>
-<li>3.电调：主要看电流 允许的最大电流、电机的工作电流<ul>
-<li>电调配合电机的工作电流和工作电压：<ul>
-<li>电调允许电流&gt;电机工作电流<br>   电调允许电压&gt;点击工作电压<br>3s-40或50A  4s-60或80A 6s-80或100A（了解</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>4.电池：种类 容量（什么器配备什么样的电池）标准&#x2F;满充电压<br>    使用电池百分之八十容量可以延长电池寿命</li>
-<li>5.发动机系统：气缸 排气管  化油器  机匣<ul>
-<li>气缸：肉体</li>
-<li>化油器：油气混合 液态油变成油滴状态 灵魂</li>
-<li>油箱构造：</li>
-<li>油箱里油管有两根；三孔正三角形布置；<ul>
-<li>怎么连：<ul>
-<li>长 上侧 接冲压管：<br>  部分废气由此进入油箱  增大内部压强 冲压作用+油箱运动产生的负压使油进入化油器<br>  废弃另一侧接排气管：一上一下有光孔  连接油管把废气排出</li>
-<li>短  下侧 吸油管（排气管对侧）：<br>  管口带有重锤：保证吸油管口一直在油箱最底端 避免断油<br>  化油器：把油气混合物传给气缸 连锥形嘴插油管 大圆孔用于进空气<br>  大风扇：发动机上止点</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>- 如何启动一个甲醇发动机？
-  * 加油（把油加到发动机里）-吸油（把油细入化油器）-刷缸-点火-调试-灭车-清洗
-  *加油：
-   + 使用油泵
-   + 注意事项：
-    - 油泵两根油管不能粘灰尘 否则会污染汽油
-    - 加油技巧（虹吸原理 手速）
-   + 使用方法：
-    - 吸油管放入油桶
-    - 加油管连接至加油口（在排气管的对侧）
-    - 冲压管：连接排气管 观察冲压管有气泡或油说明油箱已满停止加油
-    ![吸油前](/img/航模/吸油前.png)
-    ![吸油后](/img/航模/吸油后.png)
-    - __加油时油管接法示意图 发动机结构图中油的流向__
-  * 吸油
-   + 风门开大 大拇指堵住风门（保证怠速状态下转速低 进油少 风门处制造低压区）转动螺旋桨（左右在活塞间转）
-  * 涮缸：
-    + ⭐目的：用油浸润气缸，同时保证气缸里没有存油（淹缸）活塞压缩气缸中的空气 气体可压缩性好 只有空气时压缩顺畅 如果有液体启动时不顺 螺旋桨转不动
-    + ⭐方法：掌握飞机姿态 油流方向
-      - 吸油 把机头仰起 飞机抬头 转动螺旋桨 油从化油器流进气缸 再进入机匣
-      - 把飞机倒过来 转动螺旋桨 油进机匣 （机匣在气缸下部）
-      - 转动螺旋桨感受缸内油压 确认油进入气缸
-      - 飞机侧过来 排气管在下 转动螺旋桨 油进排气管
-      - 保持飞机不滚转 扬起机头 转动螺旋桨 油出排气管
-      - 左右左右转螺旋桨
-  * 点火
-   + 点火前
-    - 启动器
-       * 一般使用3s电池 缸压大会用4s电池
-       * __怼在(住)__桨罩上（不要怼歪了） __注意保持力线是直的！__ 尤其注意不要上下歪（左膝抬高右膝点地）否则会效果不好、抖动、安全隐患
-       ![启动器](/img/航模/启动器.png)
-       * 注意电池顺到启动器后面 __远离桨平面__
-       * 不要误触开关
-       ![开关](/img/航模/开关.png)
-    - 火头电
-      * 握法 ![握法1](img/航模/握法1.png)
-             ![握法2](img/航模/握法2.png)
-      * __推出__内芯/把外边的套拉下来（就是最里侧的正极 外侧三个片儿是负极） __包住__火头 放下负极（外壳）此时已固定 扶住火头电 插入发动机点火 躲开桨的外轮廓（右膝放低左膝拿高 直上直下 垂直拿开）
-      * 点燃后会听到爆燃声 听到发动机/螺旋桨转速稳定后再拿下
-      * 拿下时抬起负极
-    - 扶飞机
-      * 人蹲在飞机左边 躲开排气管
-      * 左手抓住左翼根前缘，右手把住机尾
-      * **左手向后**用力，防止飞机冲出去
-      * **右手向前**用力，和启动器同学较劲，怼住启动器
-      * __没让松手不许松手__（可能要多次试验），松手前和操纵手眼神确认
-   + 点火时：
-     - 一个人右手启动器，左手火头电（一个人拿着遥控器）；一个人扶飞机
-     - 启动器怼住桨罩后开始启动，注意听爆燃声，连续爆燃后可以脱离
-     - 转速稳定以后（靠耳朵听），拿走火头电，躲开螺旋桨
-     - 操纵手**一般0%~15%油门启动**(小车)，如果打不着火中大车启动
-     - 扶飞机不要撒手
-  + 点火后：
-    - 火头电揣兜里，启动器拿开，开始准备调试发动机
-    - 如果打着了，操纵手慢慢推大车，保持一段时间检查转速，然后回到小车，快速加油减油
-    - 如果没打着 再次尝试或中大车启动
-    - 扶飞机不松手
-- 调试（了解大油针小油针即可） 
-  + 油气比例是影响发动机能否正常运行最重要的因素 通过大油针（管大车 调最大转速）和小油针（管小车和怠速稳不稳定 小车打不着火/突然加油时转速上不去-转速调大有响应延迟）对应调节富油贫油 __文字描述状况知道要拧谁__
-  + 调试方法
-   - 大油针：先关死 然后开两圈半 打着后试着慢慢拧或每次拧15° 听转速 若上升则继续拧（一开始富油往贫油拧 听转速来回拧）
-   - 小油针：启动后保持怠速10s猛加油 通过听声音判断是否贫油/富油 或者先往一个方向拧15°~30°
-   + 灭车
-     - 调试或飞行完毕后，操纵手收小油门，拨动遥控器上灭车开关，风门关闭，发动机富油，工作停止
-     - 发动机停止工作后 __不要碰气缸 不要碰排气管__ 烫手
-     -（汽油）螺旋桨停止转动后 扶飞机的同学可以自行松手 其余时间严禁松手
-   + 后续
-     - 吸出多余汽油
-     - 无水乙醇清洗发动机：往机匣内喷无水乙醇 流程与涮缸相同 倒出时观察酒精是否清澈 若否则重复至乙醇清澈为止
-     - 先关飞机后关遥控器
-     - 用乙醇清洗飞机表面：排气管吹出的蓖麻油 未完全燃烧的汽油 废弃ect在排气管后的机身
-</code></pre>
-</li>
-<li><p><strong>电气系统</strong><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A51.png" alt="安全须知1"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E5%AE%89%E5%85%A8%E9%A1%BB%E7%9F%A52.png" alt="安全须知2"><br> <img src="/img/%E8%88%AA%E6%A8%A1/%E4%B8%89%E7%B1%BB%E7%94%B5%E6%B1%A0.png" alt="三类常用电池"></p>
-<ul>
-<li>锂电池：（最远）黑负红正<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E6%B1%A01.png" alt="锂电池"><br> 中间的黑线每条连一正一副<br> 平衡头孔数&#x3D;电池数+1</li>
-<li>⭐读电池参数<br> 放电倍率：倍率（c）×电池容量（毫安时mah）&#x3D;最大放电允许电流（mA）<br> s串联p并联3s2p三块电池串联后两两并联</li>
-<li>⭐测电操作<br>用平衡头（白头）<br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>数据是每一片电池的数据</li>
-<li>电调：根据控制信号调节电动机的转速<br>有刷电机与无刷电机：区别在于输出线 无刷：三根线（三项脉冲直流电）输出 有刷：一根线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%831.png" alt="电调结构"><br><img src="/img/%E8%88%AA%E6%A8%A1/%E8%AE%B0%E5%BF%86.png" alt="要求记忆"><br>信号线：白红黑三根线 红线输出<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%833.png" alt="UBEC"><br>BEC集成到电调上 UBEC独立<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%94%B5%E8%B0%832.png" alt="电调结构"></li>
-<li>接收机<br><img src="/img/%E8%88%AA%E6%A8%A1/%E6%8E%A5%E6%94%B6%E6%9C%BA.png" alt="航模接收机"><ul>
-<li>天线尽量远离对方 一个竖直一个水平最好</li>
-</ul>
-</li>
-<li>舵机<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA.png" alt="舵机"><ul>
-<li>中立位：保证未接收到信号时舵面也保持在中立位<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA2.png" alt="舵测"></li>
-<li>舵测：舵机会跟着舵测旋转旋转起来（手动）<br> <img src="/img/%E8%88%AA%E6%A8%A1/%E8%88%B5%E6%9C%BA3.png" alt="舵机参数"></li>
-<li>舵机参数：<br> 速度：4.8v工作电压下 转过60°需要0.12s<br> 扭矩：4.8v工作电压下 1cm舵机摇臂处可以拉动1.6公斤的东西<br> 齿轮材质：变速齿轮的材质  金属材质可以吃力更大 常用于大扭矩舵机 但是重量大</li>
-</ul>
-</li>
-<li>线材：<br><img src="/img/%E8%88%AA%E6%A8%A1/%E7%BA%BF%E6%9D%90.png" alt="线材"><ul>
-<li>针是公头 套是母头（看的是金属部分） 黄色棒状是香蕉头（公母头去了橡胶套）</li>
-<li>电线：漆包线相较于硅胶线更轻 但是更加脆弱易断 也不好用<br> 绕电机线圈</li>
-<li>AWG值越大 线越细<br> 通常以绝对安全的值考虑 航模通电时间短通常使用偏细的线也没啥问题~</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>小金星制作</strong></p>
-<ul>
-<li>机翼有一个上反角-怎么画肋台？</li>
-<li>机翼整体加强：加强肋+强材料翼梁+腹板上下粘接</li>
-<li>三角块不要粘在翼肋上</li>
-<li>D 型盒儿</li>
-</ul>
-</li>
-<li><h1 id="一些名词-amp-amp-tips"><a href="#一些名词-amp-amp-tips" class="headerlink" title="一些名词&amp;&amp;tips"></a><strong>一些名词&amp;&amp;tips</strong></h1><p>   ·舵效：飞机动作<br>   ·提力 降力<br>   ·油门越高，电机转速越高<br>   ·电调&#x2F;ESC （electric speed control）<br>   ·二冲程汽油发动机（新鲜空气来自机匣）<br>   ·柴油  甲醇发动机（压燃实现燃料化学能的转化）<br>   ·怠速：利用抬升力 慢慢碰地<br>   · stabilator 全动式水平尾翼<br>   · vertical stabilizer 垂直（尾翼）安定面<br>   · antiservo tab 反作用伺服调整片（反补偿片）：减轻控制压力和保持全动式水平尾翼位于期望位置的配平装置 迫使调整片与自身同时同向运动<br>   · azimuth stabilizer纵舵机<br>   ·horizontal stabilizer：水平安定面<br>   ·elevator：升降舵<br>   ·rudder：方向舵<br>   ·trim tab：配平调整片<br>   ·荷兰滚dutch roll：指当升力大于重力的时候，有规律的大幅度摇摆机翼，从后面看飞机就像钟摆一样，从上面看就是蛇行路线的现象。荷兰滚类似于简谐振动，规律性强，实战意义不大，只是用于测试；当升力大于重力的时候，有规律的大幅度摇摆机翼，从后面看飞机就像钟摆一样，从上面看就是蛇行路线的现象。yall-roll滚转稳定性强而偏航稳定性弱-increased drag due to increased lift-same motion in the opposite direction<br>   ·普加乔夫眼镜蛇机动：是著名的过失速机动动作。机动过程中飞行员快速向后拉杆使机头上仰至110度～120度之间，形成短暂的机尾在前，机头在后的平飞状态，然后推杆压机头，再恢复到原来水平状态。机动时飞机进入的速度约为425公里&#x2F;小时，飞机以超过148公里&#x2F;小时的速率减速，然后减速到110公里&#x2F;小时，这个动作仅使飞机承受3.5～4g的过载，在整个机动过程中，飞机的飞行高度几乎没有什么变化。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学点</category>
-      </categories>
-      <tags>
-        <tag>飞机</tag>
       </tags>
   </entry>
 </search>
