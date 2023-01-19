@@ -92,9 +92,61 @@
 <li>当一个函数名对应多个函数时，输出时会问<code>A or B?</code>此时可以使用<code>ctrl+左键</code> 点击那个函数 可以跳转到函数的声明位置<br>如果想要调用某一个模块所有函数的变量和对象 可以使用<code>from xxx import def</code><br>引入名称支持自定义 或者在不同的情况下要引入不同的模块 但后续要对它进行相同的操作<br>  -注意：当某一个模块第一次被加载的时候会运行一遍代码来进行初始化，如果这之后被再次加载，就不会再次运行初始化，所以这些模块里的布局变量都是单例模式（singleton）的</li>
 </ul>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># game.py</span></span><br><span class="line"><span class="comment"># import the draw module</span></span><br><span class="line"><span class="keyword">if</span> <span class="symbol">visual_mode:</span></span><br><span class="line">   <span class="comment"># in visual mode, we draw using graphics</span></span><br><span class="line">   import draw_visual as draw</span><br><span class="line"><span class="symbol">else:</span></span><br><span class="line">   <span class="comment"># in textual mode, we print out text</span></span><br><span class="line">   import draw_textual as draw</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    result = play_game()</span><br><span class="line">    <span class="comment"># this can either be visual or textual depending on visual_mode</span></span><br><span class="line">    draw.draw_game(result)</span><br></pre></td></tr></table></figure>
-
-<p>###类<code>class</code>和对象<code>object</code></p>
 <ul>
+<li><p>函数封装<br>大多数面向对象语言都有三个典型特征，封装、继承、多态；封装是将某些属性通过某些未隐藏的方法（比如提供特定参数，类似于密码）进行调用，可以避免外部对内部机密数据的影响，提高了程序的可维护性，控制用户不合理的操作。</p>
+<ul>
+<li>python的权限控制：<br>1.公有public：公有属性的类变量和类函数，在类的外部、内部和子类中都可以访问；<br>2.私有private：私有属性的类变量和类函数，只能在本类的内部使用，类的外部以及子类都无法使用；</li>
+<li>实现方式：默认状态下，变量和方法是公有的；而如果类里的变量和函数名称以双下划线开头，则其为私有变量或私有函数。也有以单下划线开头的类属性或者类方法，被视为私有属性和私有方法。</li>
+<li>python内部调用也有部分以双下划线开头和结尾的类方法，自己定义的时候应当避免。</li>
+<li>example.<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Net</span>:</span><br><span class="line">   <span class="keyword">def</span> <span class="title function_">setname</span>(<span class="params"><span class="variable language_">self</span>, name</span>):</span><br><span class="line">       <span class="keyword">if</span> len(name) &lt; <span class="number">3</span>:</span><br><span class="line">          <span class="keyword">raise</span> <span class="title class_">ValueError</span>(<span class="string">&#x27;名称长度必须大于3！&#x27;</span>)</span><br><span class="line">       <span class="variable language_">self</span>.__name = name</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">def</span> <span class="title function_">getname</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">       <span class="keyword">return</span> <span class="variable language_">self</span>.__name</span><br><span class="line"></span><br><span class="line">     <span class="comment"># 为 name 配置 setter 和 getter 方法</span></span><br><span class="line">     name = property(getname, setname)</span><br><span class="line"></span><br><span class="line">     <span class="keyword">def</span> <span class="title function_">setadd</span>(<span class="params"><span class="variable language_">self</span>, add</span>)</span><br><span class="line">         <span class="keyword">if</span> add.startswith(<span class="string">&quot;https://&quot;</span>):</span><br><span class="line">            <span class="variable language_">self</span>.__add = add</span><br><span class="line">         <span class="symbol">else:</span></span><br><span class="line">            <span class="keyword">raise</span> <span class="title class_">ValueError</span>(<span class="string">&#x27;地址必须以 https:// 开头&#x27;</span>)</span><br><span class="line"></span><br><span class="line">     <span class="keyword">def</span> <span class="title function_">getadd</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">         <span class="keyword">return</span> <span class="variable language_">self</span>.__add</span><br><span class="line">     </span><br><span class="line">     <span class="comment"># 为 add 配置 setter 和 getter 方法</span></span><br><span class="line">     add = property(getadd, setadd)</span><br><span class="line"></span><br><span class="line">     <span class="comment"># 定义一个私有方法</span></span><br><span class="line">     <span class="keyword">def</span> <span class="title function_">__display</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">          print(<span class="variable language_">self</span>.__name, <span class="variable language_">self</span>.__add)</span><br><span class="line">       net = <span class="title class_">Net</span>()</span><br><span class="line">       </span><br><span class="line">     net.name = <span class="string">&quot;Github&quot;</span></span><br><span class="line">     net.add = <span class="string">&quot;https://github.com/&quot;</span></span><br><span class="line">     print(net.name)</span><br><span class="line">     print(net.add)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>通过设计良好的封装，使得用户只能通过暴露的<code>setter（）</code>和<code>getter（）</code>方法操作<code>name</code>和<code>add</code>的属性，然后对<code>setname（）</code>和<code>setname</code>进行一定的逻辑控制，即可避免用户的不合理操作，提高了类的可维护性和安全性。</p>
+<ul>
+<li><code>net</code>类中还有一个<code>__display(self)</code>私有方法，该方法没有对外暴露的“窗口”，因此我们无法在外部使用它。 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">net.__display</span><br><span class="line"><span class="comment">#尝试调用私有display（）方法会报错</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>匿名函数lambda<br>简单函数可以用lambda函数代替 格式如下：<br><code>your_function_name = lambda x,y : output</code></p>
+</li>
+<li><p>函数多参数（接收不定多个参数）</p>
+<ul>
+<li><code>def myfunction(*name)</code><ul>
+<li>形参名中的星号会创建一个名为name的空元组，并将收到的值全都封装起来。如果直接打印name，会按照元组格式打印。</li>
+<li>通过<code>list(name)</code>可以将输入值形成列表 取len可以得到输入参数的个数、</li>
+<li>如果在接收任意个数实参之前还要接收特定个数给定值，直接在前边用函数格式添加即可。但是任意个数实参只能在最后添加。</li>
+</ul>
+</li>
+<li><code>**name</code><ul>
+<li>两个星号会创建一个名为name的字典，因此在输入时应当使用键值对格式<code>A=B</code>输入</li>
+<li>通过关键词来获取任意数量参数，由此参数顺序就不重要了捏</li>
+<li>判断键值对真假：<code>if dir.get(&quot;key&quot;)==value</code></li>
+<li>name会以字典形式进行调用和输出</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="I-x2F-O函数"><a href="#I-x2F-O函数" class="headerlink" title="I&#x2F;O函数"></a>I&#x2F;O函数</h1><ul>
+<li>键盘读取<code>input</code></li>
+</ul>
+<h2 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h2><ul>
+<li>文件读取并存储：<code>file_object = open(&quot;file_name&quot;,&quot;access_mode&quot;,&quot;buffering&quot;)</code><ul>
+<li><code>file_name</code>包括文件后缀</li>
+<li>打开方式<ul>
+<li>默认方式为<code>&quot;r&quot;</code>只读方式，文件指针会放在文件开头</li>
+<li>常用表示如下：<br> t 文本模式（默认）<br> x 写模式，新建一个文件，如果该文件已存在会报错<br> b 二进制模式</li>
+</ul>
+<ul>
+<li>打开一个文件更新 可读可写<br> rb 以二进制格式打开一个文件用于只读 文件指针放在开头 默认 一般用于非文本文件<br> w打开一个文件只用于写入，如果该文件已存在则打开文件并从开头编辑 原有内容会被删除 若该文件不存在创建新文件<br> a打开一个文件用于追加 若该文件已存在 文件指针将会放在文件的结尾 反之则创建新文件写入<br> （还有rb+、r+、wb、w+、wb+、ab、a+、ab+等就是组合含义啦）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>刷新缓冲区没有写入的信息并安全关闭文件<code>file_name.close()</code></li>
+<li>将字符串写入一个打开的文件（从指针处）<code>filename.write(string)</code></li>
+<li>从一个打开的文件中读取字符串 若没有指定number会尽可能多读取<code>filename.read(number)</code></li>
+<li>此外还可以导入包<code>os</code>进行文件重命名 删除 目录等操作</li>
+</ul>
+<h1 id="类class和对象object"><a href="#类class和对象object" class="headerlink" title="类class和对象object"></a>类<code>class</code>和对象<code>object</code></h1><ul>
 <li>对象是对变量和函数的封装，是一个单一实体，对象从类中获得他们的变量和函数，类本质上是一个创建对象的模板</li>
 <li>可以以一个类为模板创建多个对象，也可以更改某个对象的某个变量。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span>:</span><br><span class="line">      variable = <span class="string">&quot;blabla&quot;</span></span><br><span class="line"></span><br><span class="line">      <span class="keyword">def</span> <span class="title function_">my_function</span>(<span class="params"><span class="variable language_">self</span></span>):</span><br><span class="line">             print(<span class="string">&quot;This is a message inside the class.&quot;</span>)</span><br><span class="line"></span><br><span class="line">my_object = <span class="title class_">MyClass</span>()</span><br><span class="line">print(my_object.variable)</span><br><span class="line"><span class="comment"># blabla</span></span><br><span class="line">my_object2 = <span class="title class_">MyClass</span>()</span><br><span class="line">my_object2.variable = <span class="string">&quot;lalalala&quot;</span></span><br><span class="line">print(my_object2.variable)</span><br><span class="line"><span class="comment"># lalalala</span></span><br><span class="line">my_object.my_function()</span><br><span class="line"><span class="comment"># This is a message inside the class.</span></span><br></pre></td></tr></table></figure></li>
 <li><code>init()</code>函数：是类的初始化函数，默认可以只有<code>self</code>函数，也可以传入别的参数进行初始化。<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">NumberHolder</span>:</span><br><span class="line">       <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params"><span class="variable language_">self</span>, number</span>):</span><br><span class="line">             <span class="variable language_">self</span>.number = number</span><br><span class="line">  </span><br><span class="line">holder1 = <span class="title class_">NumberHolder</span>(<span class="number">19260817</span>)</span><br><span class="line">print(holder1.number)</span><br></pre></td></tr></table></figure></li>
@@ -106,6 +158,12 @@
 <li>遍历字典（<code>name</code>承接<code>key</code>） <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> A,B... <span class="keyword">in</span> dict.items():</span><br><span class="line">   print(<span class="string">&quot;%s %d&quot;</span>  % (A,B))</span><br></pre></td></tr></table></figure></li>
 <li>删除字典中的键值对<code>.pop(key)</code>&#x2F;<code>del dict[&quot;key&quot;]</code></li>
 <li>添加键值对<code>dict[&#39;key&#39;]=value</code></li>
+</ul>
+<h1 id="自定义包与引入"><a href="#自定义包与引入" class="headerlink" title="自定义包与引入"></a>自定义包与引入</h1><ul>
+<li>创建文件夹，文件名即为包名</li>
+<li>在文件夹内部添加<code>__init__.py</code>,这个文件里可以不写任何代码，是在别的地方调用这个包时进行初始化的地方</li>
+<li>添加模块来实现功能<code>module.py</code></li>
+<li>包内模块引用应当用<code>from package import module (as)</code>&#x2F;<code>import package.module as</code>&#x2F;<code>from package.module import def/class</code>也就是说必须同时体现包和包内模块，如果只导入包会报错。</li>
 </ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
@@ -131,7 +189,7 @@
     </div>
     
         <div class="side">
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2-amp-amp-%E5%88%97%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">字符串&amp;&amp;列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.</span> <span class="toc-text">条件语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">4.</span> <span class="toc-text">字典</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2-amp-amp-%E5%88%97%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">字符串&amp;&amp;列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.</span> <span class="toc-text">条件语句</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#I-x2F-O%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">I&#x2F;O函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96"><span class="toc-number">4.1.</span> <span class="toc-text">文件读取</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BBclass%E5%92%8C%E5%AF%B9%E8%B1%A1object"><span class="toc-number">5.</span> <span class="toc-text">类class和对象object</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">6.</span> <span class="toc-text">字典</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E4%B8%8E%E5%BC%95%E5%85%A5"><span class="toc-number">7.</span> <span class="toc-text">自定义包与引入</span></a></li></ol>
         </div>
     
 </div>

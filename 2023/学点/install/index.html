@@ -89,7 +89,7 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
 <blockquote>
 <p>Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load. To activate this environment please see <a target="_blank" rel="noopener" href="https://conda.io/activation">https://conda.io/activation</a></p>
 </blockquote>
-<p>在命令行输入<code>activate conda D:\www\xxx\Game\anaconda</code>其中最后时anaconda安装文件夹位置</p>
+<p><code>conda activate</code><br>在命令行输入<code>activate conda D:\www\xxx\Game\anaconda</code>其中最后时anaconda安装文件夹位置</p>
 <blockquote>
 <p>due to incompatibility with several python libraries, ‘Destination Floder’ cannot contain non-ascii characters (special characters or deacreitics).</p>
 </blockquote>
@@ -98,12 +98,27 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
 <li><p>tensorflow安装</p>
 <ul>
 <li>cpu版本：pip install tensorflow<br> -非nvidia芯片安装gpu版本</li>
-<li>安装报错：<a target="_blank" rel="noopener" href="https://pypi.org/project/tensorflow-gpu/#files">https://pypi.org/project/tensorflow-gpu/#files</a></li>
+<li>安装报错：<a target="_blank" rel="noopener" href="https://pypi.org/project/tensorflow-gpu/#files">https://pypi.org/project/tensorflow-gpu/#files</a><blockquote>
+<p>This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2<br> To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.</p>
+</blockquote>
+</li>
 </ul>
+<p> 加入代码<br> <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">os.environ[<span class="string">&#x27;TF_CPP_MIN_LOG_LEVEL&#x27;</span>] = <span class="string">&#x27;2&#x27;</span></span><br></pre></td></tr></table></figure>
+ </p>
 </li>
 <li><p>框架安装</p>
 <ul>
 <li>显卡 Pytorch cuda cudnn版本要对应否则装不上</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>pytorch<blockquote>
+<p>D:\www\xxx\Game\anaconda\envs\pytorch1_11\Scripts\python.exe “D:\WeChat\WeChat Files\wxid_vk20y7qdy11622\FileStorage\File\2023-01\第四次课作业demo_手写字NN_pytorch\mnist_pytorch\main.py”<br>Traceback (most recent call last):<br>File “D:\WeChat\WeChat Files\wxid_vk20y7qdy11622\FileStorage\File\2023-01\第四次课作业demo_手写字NN_pytorch\mnist_pytorch\main.py”, line 3, in <module><br>  import  torch<br>File “D:\www\xxx\Game\anaconda\envs\pytorch1_11\lib\site-packages\torch_<em>init</em>_.py”, line 139, in <module><br>  raise err<br>OSError: [WinError 126] 找不到指定的模块。 Error loading “D:\www\xxx\Game\anaconda\envs\pytorch1_11\lib\site-packages\torch\lib\caffe2_nvrtc.dll” or one of its dependencies.<br>Process finished with exit code 1</p>
+</blockquote>
+<ul>
+<li>获取相应的dll文件 放到绝对路径里即可</li>
+<li>看找不到的模块目录 顺着目录发现文件存在 应当为cuda版本的问题</li>
 </ul>
 </li>
 </ul>

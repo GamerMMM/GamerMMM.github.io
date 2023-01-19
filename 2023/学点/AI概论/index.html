@@ -82,7 +82,7 @@
 <li>线性回归是什么啊<br>是一种连续问题<ul>
 <li>损失函数</li>
 <li>梯度下降</li>
-<li>学习率</li>
+<li>学习率：过大会导致梯度爆炸</li>
 <li>最优次优</li>
 </ul>
 </li>
@@ -100,10 +100,51 @@
 </li>
 </ul>
 </li>
-<li>逻辑回归<br>实际上是一种二分类问题 通过是或非分类<br>Sigmoid函数<br>！[图像]&#x2F;img&#x2F;航模&#x2F;sigmoid.png<br>把负无穷到正无穷的数映射到零到一之间 且大部分极为接近0或1 从而可以凸显二分类效果</li>
+</ul>
+<p>数据增强<br>正则化<br>train-validation-test<br>每次测试train后进行validation测试 看正确率如何 在正确率下降时强行终止（衰减以validation为导向）</p>
+<ul>
+<li>逻辑回归<br>实际上是一种二分类问题 通过是或非分类<br>激活函数：Sigmoid函数<br>![图像]&#x2F;img&#x2F;航模&#x2F;sigmoid.png<br>把负无穷到正无穷的数映射到零到一之间 且大部分极为接近0或1 从而可以凸显二分类效果<br>容易产生梯度消失现象 不会产生下降问题</li>
+</ul>
+<ul>
+<li>relu函数有梯度保护作用可以避免产生梯度消失 非线性具有更好的拟合能力 计算快速很简单</li>
+</ul>
+<ul>
 <li>如何判断回归是否有效</li>
 </ul>
-<p>##模型</p>
+<h3 id="常见层定义"><a href="#常见层定义" class="headerlink" title="常见层定义"></a>常见层定义</h3><p>输入→卷积层（配有激活函数relu或sigmoid）→汇聚层（或许卷积好多次以后激活再积聚）会生成一通所需数据→全连接层→softmax<br>神经网络映射将卷积得到的大量特征通过神经网络映射到具体分类上</p>
+<ul>
+<li>卷积层：两个同维度矩阵的一种算法<ul>
+<li>卷积的本质就是提取特征</li>
+<li>卷积神经网络：</li>
+<li>卷积核：对整体进行卷积操作生成一个保留信息的新的值</li>
+<li>卷积层的设计<br>1.二端型：只是定义输入输出通道和大小、卷积核大小（与特征大小有关）<br>2.直接型：定义一层卷积核个数、大小和移动步长 卷积核可以直接决定新的通道数 移动步长决定了数据缩小的比例（不要有偶数卷积核，没有卷积点） 保证层与层之间大小匹配</li>
+</ul>
+</li>
+<li>池化层&#x2F;汇聚层：通过池化操作（汇聚）简化输入数据并保留主特征<ul>
+<li>池化操作可以提炼特征 防止过拟合</li>
+<li>压缩数据 提升计算速度</li>
+<li>池化范围的选择和卷积核大小密切相关</li>
+<li>平均池化先激活 最大池化顺序都可以</li>
+</ul>
+</li>
+<li>批标准化：在卷积层与激活函数之间，通过让数据标准化，使得不论数据如何改变，整体的数据分布情况更为统一，便于网络收敛；标准化后数据分布在活化区间（可以有映射有变化的区间），可以最大程度保留数据有效性，也便于训练。</li>
+<li>全连接层：相当于一神经网络隐藏层，将卷积网络输出映射到目标分类数</li>
+<li>拍平层：将矩阵拉成一维向量 卷积网络提取的高维特征经过降维才能被神经网络映射</li>
+<li>失活层：随机失活，减少对失活检测器的依赖，使得整体模型的各检测器更具独立性，提升了模型性能，降低了过拟合可能，同样可以作为训练工具。</li>
+</ul>
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p>![梯度下降]&#x2F;img&#x2F;航模&#x2F;梯度下降1.png<br>![梯度下降]&#x2F;img&#x2F;航模&#x2F;梯度下降2.png<br>![梯度下降]&#x2F;img&#x2F;航模&#x2F;梯度下降3.png<br>![梯度下降]&#x2F;img&#x2F;航模&#x2F;练习.png<br>![梯度下降]&#x2F;img&#x2F;航模&#x2F;解答1.png</p>
+<ul>
+<li>求和号只得是所有m个数据得到平均偏差 由于迭代每次只迭代一个<br> ![梯度下降]&#x2F;img&#x2F;航模&#x2F;解答2.png<br>![梯度下降]&#x2F;img&#x2F;航模&#x2F;预测2.png</li>
+<li>要使数据收敛必须要设置小于1<br> 类似于反馈 对预测值的调整向实际值靠近<br> core：找到每一个参数对两个变量的通路</li>
+</ul>
+<h2 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h2><p>是由多个单参数一元线性回归层通过sigmoi函数激活后</p>
+<ul>
+<li>反向传播<ul>
+<li>由总到分先求第一层，再求第二层…..传给下一层每一个节点 可以传导更完整更充分更全面</li>
+<li>由激活函数底层到顶层一层层传好以后<br>输入层&#x2F;隐藏层（计算层）&#x2F;输出层<br>神经网络的隐藏层理论上可以拟合任何函数</li>
+</ul>
+</li>
+</ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -128,7 +169,7 @@
     </div>
     
         <div class="side">
-            
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%B1%82%E5%AE%9A%E4%B9%89"><span class="toc-number">1.</span> <span class="toc-text">常见层定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B"><span class="toc-number"></span> <span class="toc-text">模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"><span class="toc-number"></span> <span class="toc-text">神经网络</span></a>
         </div>
     
 </div>
