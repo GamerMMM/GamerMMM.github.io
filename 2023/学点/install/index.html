@@ -13,8 +13,12 @@
     <meta name="description" content="一些遇到的bug 听老学长的 狠狠记住
 
 
+anaconda命令行直接下载库
 
-Warning:This Python interpreter is in a conda environment, but the environme,"> 
+12activate environmentpip install &amp;lt;package&amp;gt;
+
+
+Microso,"> 
     <meta name="author" content="Gamer"> 
     <link rel="alternative" href="atom.xml" title="Gamer&#39;s Play" type="application/atom+xml"> 
     <link rel="icon" href="/img/ffavicon.png"> 
@@ -28,8 +32,12 @@ Warning:This Python interpreter is in a conda environment, but the environme,">
     <meta name="twitter:description" content="一些遇到的bug 听老学长的 狠狠记住
 
 
+anaconda命令行直接下载库
 
-Warning:This Python interpreter is in a conda environment, but the environme,"/>
+12activate environmentpip install &amp;lt;package&amp;gt;
+
+
+Microso,"/>
     
     
     
@@ -40,8 +48,12 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
     <meta property="og:description" content="一些遇到的bug 听老学长的 狠狠记住
 
 
+anaconda命令行直接下载库
 
-Warning:This Python interpreter is in a conda environment, but the environme,"/>
+12activate environmentpip install &amp;lt;package&amp;gt;
+
+
+Microso,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -85,7 +97,15 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
         <div class="content markdown">
             <p>一些遇到的bug 听老学长的 狠狠记住</p>
 <span id="more"></span>
+<blockquote>
+<p>anaconda命令行直接下载库</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">activate environment</span><br><span class="line">pip install &lt;package&gt;</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>Microsoft store打不开</p>
+</blockquote>
+<p>代理服务器设置→取消手动代理 打开自动代理（自动检测设置）</p>
 <blockquote>
 <p>Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load. To activate this environment please see <a target="_blank" rel="noopener" href="https://conda.io/activation">https://conda.io/activation</a></p>
 </blockquote>
@@ -94,8 +114,12 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
 <p>due to incompatibility with several python libraries, ‘Destination Floder’ cannot contain non-ascii characters (special characters or deacreitics).</p>
 </blockquote>
 <p>安装路径里有汉字….</p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><ul>
+<li>环境配置一定要注明python版本 否则无法使用</li>
+<li>在配置某个环境的时候一定要先创建一个环境 在里面进行相应包的下载</li>
+</ul>
 <ul>
-<li><p>tensorflow安装</p>
+<li><p>tensorflow安装<br>其实可以直接在anaconda库种安装tensorflow-gpu</p>
 <ul>
 <li>cpu版本：pip install tensorflow<br> -非nvidia芯片安装gpu版本</li>
 <li>安装报错：<a target="_blank" rel="noopener" href="https://pypi.org/project/tensorflow-gpu/#files">https://pypi.org/project/tensorflow-gpu/#files</a><blockquote>
@@ -103,8 +127,7 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
 </blockquote>
 </li>
 </ul>
-<p> 加入代码<br> <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">os.environ[<span class="string">&#x27;TF_CPP_MIN_LOG_LEVEL&#x27;</span>] = <span class="string">&#x27;2&#x27;</span></span><br></pre></td></tr></table></figure>
- </p>
+<p> 加入代码<br> <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import os</span><br><span class="line">os.environ[<span class="string">&#x27;TF_CPP_MIN_LOG_LEVEL&#x27;</span>] = <span class="string">&#x27;2&#x27;</span></span><br></pre></td></tr></table></figure></p>
 </li>
 <li><p>框架安装</p>
 <ul>
@@ -146,7 +169,7 @@ Warning:This Python interpreter is in a conda environment, but the environme,"/>
     </div>
     
         <div class="side">
-            
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">环境配置</span></a></li></ol>
         </div>
     
 </div>

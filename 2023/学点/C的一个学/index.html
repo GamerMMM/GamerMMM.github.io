@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>C的一个学 - Gamer&#39;s Play</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Gamer.,"> 
+    <meta name="description" content="递归、搜索与回溯算法框架一 123456789101112int search(int x)&amp;#123;  for(int i=1;i&amp;lt;=算符种数n；i++)   if(satisfy)   ,"> 
+    <meta name="author" content="Gamer"> 
+    <link rel="alternative" href="atom.xml" title="Gamer&#39;s Play" type="application/atom+xml"> 
+    <link rel="icon" href="/img/ffavicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="C的一个学 - Gamer&#39;s Play"/>
+    <meta name="twitter:description" content="递归、搜索与回溯算法框架一 123456789101112int search(int x)&amp;#123;  for(int i=1;i&amp;lt;=算符种数n；i++)   if(satisfy)   ,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="Gamer&#39;s Play"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="C的一个学 - Gamer&#39;s Play"/>
+    <meta property="og:description" content="递归、搜索与回溯算法框架一 123456789101112int search(int x)&amp;#123;  for(int i=1;i&amp;lt;=算符种数n；i++)   if(satisfy)   ,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Gamer&#39;s Play</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://gamermmm.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">C的一个学</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">C的一个学</h1>
+        <div class="stuff">
+            <span>一月 24, 2023</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="递归、搜索与回溯算法"><a href="#递归、搜索与回溯算法" class="headerlink" title="递归、搜索与回溯算法"></a>递归、搜索与回溯算法</h1><h2 id="框架一"><a href="#框架一" class="headerlink" title="框架一"></a>框架一</h2> <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">int search(int x)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=算符种数n；i++)</span><br><span class="line">   <span class="keyword">if</span>(satisfy)</span><br><span class="line">   &#123;</span><br><span class="line">      secure the result(<span class="keyword">include</span> <span class="string">&#x27;x&#x27;</span>)</span><br><span class="line">      <span class="keyword">if</span>(x==n-<span class="number">1</span>)</span><br><span class="line">       print the result</span><br><span class="line">      <span class="keyword">else</span> search(x+<span class="number">1</span>) /<span class="regexp">/继续进行这个元素后的排列</span></span><br><span class="line"><span class="regexp">      recover(satisfy to enter the if) </span></span><br><span class="line"><span class="regexp">   &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="框架二"><a href="#框架二" class="headerlink" title="框架二"></a>框架二</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(reach the goal print)</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"> <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line"> <span class="keyword">if</span>(satisfy)</span><br><span class="line">  &#123;</span><br><span class="line">    secure the result </span><br><span class="line">    search(x+<span class="number">1</span>)</span><br><span class="line">    recover</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><ol>
+<li><p>全排列：实际上需要找出每一个排列后的全排列</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">char s[<span class="number">10</span>],ch[<span class="number">10</span>];</span><br><span class="line">int n;</span><br><span class="line">bool p[<span class="number">10</span>];</span><br><span class="line">void search(int x)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(int i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	 <span class="keyword">if</span>(p[i]==<span class="number">0</span>)     /<span class="regexp">/该字符未参与排列</span></span><br><span class="line"><span class="regexp">	  &#123;</span></span><br><span class="line"><span class="regexp">	  	p[i]=1;      /</span><span class="regexp">/标记该位置的字符已经参与排列</span></span><br><span class="line"><span class="regexp">	  	ch[x]=s[i];        /</span><span class="regexp">/存储字符</span></span><br><span class="line"><span class="regexp">	  	if(x+1==n)     /</span><span class="regexp">/字符串是从0开始记 此时所有位置的字符已经排列完毕</span></span><br><span class="line"><span class="regexp">	  	 cout&lt;&lt;ch&lt;&lt;endl;</span></span><br><span class="line"><span class="regexp">	  	else</span></span><br><span class="line"><span class="regexp">	  	 search(x+1);    /</span><span class="regexp">/让下一个字符作为后一个排列的第一个进行全排列</span></span><br><span class="line"><span class="regexp">        p[i]=0;         /</span><span class="regexp">/只有本排列中参与的字符才会标记为已参与</span></span><br><span class="line"><span class="regexp">	  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">int main()</span></span><br><span class="line"><span class="regexp">&#123;</span></span><br><span class="line"><span class="regexp">	cin&gt;&gt;s;</span></span><br><span class="line"><span class="regexp">	n=strlen(s);</span></span><br><span class="line"><span class="regexp">	search(0);</span></span><br><span class="line"><span class="regexp">	return 0;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>最大公因数gcd</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int gdc(int m,int n) /<span class="regexp">/前提：n＞m 条件-真-假</span></span><br><span class="line"><span class="regexp">&#123;return n%m==0?m:gdc(m,n%m)&#125; /</span><span class="regexp">/n与m和m与n%m公因数相同捏</span></span><br></pre></td></tr></table></figure></li>
+<li><p>爬楼梯<br>法一 找出基础方法 每层递归一直计数到底层<br>  实际上仍带有p[x]判定</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int n,p[x];</span><br><span class="line">int t(int x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(p[x]) <span class="keyword">return</span> p[x]; <span class="regexp">//</span>如果本层走法数已算出 直接返回走法</span><br><span class="line">	<span class="keyword">if</span>(x==<span class="number">1</span>) <span class="keyword">return</span> p[x]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(x==<span class="number">2</span>) <span class="keyword">return</span> p[x]=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">return</span> p[x]=t(x-<span class="number">1</span>)+t(x-<span class="number">2</span>); <span class="regexp">//</span>每一层走法数=少一层全走法数+少两层全走法数</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>,&amp;n)   /<span class="regexp">/在一直有输入的情况下持续循环 </span></span><br><span class="line"><span class="regexp">	   cout&lt;&lt;t(n)&lt;&lt;endl;</span></span><br><span class="line"><span class="regexp">    return 0;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>法二  实际上是直接累加</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">void t(int x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">1</span>) ans++;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">2</span>) ans+=<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">else</span> t(x-<span class="number">1</span>),t(x-<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 一些细碎的知识点</span></span><br><span class="line"><span class="number">1</span>. 一般情况下，程序中不直接将一个浮点变量与另一个变量或常量进行比较来判断是否相等，这是因为c程序中的浮点运算是不精确的，计算结果可能与理论值略有不同，尽管这一误差可能极其微小，但直接比较时仍可能产生与预期不同的结果。</span><br><span class="line">    - e.g.double类型变量x运算结果应当为<span class="number">0</span>，但由于误差结果为<span class="number">10</span>^-<span class="number">123</span>^，但是表达式下==<span class="number">0.0</span>的输出仍为<span class="number">0</span>（<span class="title class_">False</span>）</span><br><span class="line">因此在程序中如果对浮点数比较，通常是判断两个被比较的数值之差是否小于某个给定的误差范围</span><br><span class="line">   - e.g.判断x ？= <span class="number">0</span>时往往写为<span class="string">`fabs(x)&lt;EPS`</span></span><br><span class="line">其中<span class="string">`fabs`</span>是浮点数取绝对值的标准库函数，其函数原型在<span class="string">`&lt;math.h&gt;`</span>库中说明；<span class="string">`EPS`</span>是允许最大误差，由实际要求自定义。</span><br><span class="line"><span class="number">2</span>. 逻辑语句</span><br><span class="line">- <span class="string">`&amp;&amp;`</span>优先级大于<span class="string">`||`</span></span><br><span class="line">- <span class="string">`a&lt;b&lt;c`</span>中 关系运算符是左结合的 实质是只要c大于<span class="number">1</span> 该式恒成立</span><br><span class="line"><span class="number">3</span>. 条件运算符</span><br><span class="line">&gt; z=(a&gt;b)<span class="string">?A</span><span class="symbol">:B</span></span><br><span class="line"></span><br><span class="line">一个复杂的嵌套举例：根据变量的值输出ab大小关系的陈述语句</span><br><span class="line">&gt; printf(<span class="string">&quot;a is %s b&quot;</span>, (a&gt;b) ? <span class="string">&quot;greater than&quot;</span> : (a&lt;b) ? <span class="string">&quot;less than&quot;</span> : <span class="string">&quot;equal to&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. <span class="string">`switch`</span>语句</span><br><span class="line"><span class="string">``</span><span class="string">`ruby</span></span><br><span class="line"><span class="string"> switch (n)&#123;</span></span><br><span class="line"><span class="string">    case0:    ;break;</span></span><br><span class="line"><span class="string">    case1:    ;break;....</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>不同的case可以共享同一组语句序列和打印结果 可以写在同一行 </p>
+</li>
+<li><p>函数</p>
+</li>
+<li><p>格式</p>
+<blockquote>
+<p>类型名 函数名（参数列表）<br>{<br> 函数体<br>}</p>
+</blockquote>
+</li>
+<li><p>声明（函数本体可写于程序最后）去掉函数体后加分号</p>
+</li>
+<li><p><code>while(scanf(&quot;%d&quot;,&amp;n)!=EOF)</code>在一直有输入的情况下持续循环</p>
+</li>
+</ol>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="/music/PianoSolo.mp3">
+            </audio>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E3%80%81%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">递归、搜索与回溯算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E4%B8%80"><span class="toc-number">1.1.</span> <span class="toc-text">框架一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E4%BA%8C"><span class="toc-number">1.2.</span> <span class="toc-text">框架二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Examples"><span class="toc-number">1.3.</span> <span class="toc-text">Examples</span></a></li></ol></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+</html>

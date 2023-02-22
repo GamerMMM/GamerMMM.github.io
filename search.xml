@@ -95,7 +95,15 @@
     <url>/2023/%E5%AD%A6%E7%82%B9/install/</url>
     <content><![CDATA[<p>一些遇到的bug 听老学长的 狠狠记住</p>
 <span id="more"></span>
+<blockquote>
+<p>anaconda命令行直接下载库</p>
+</blockquote>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">activate environment</span><br><span class="line">pip install &lt;package&gt;</span><br></pre></td></tr></table></figure>
 
+<blockquote>
+<p>Microsoft store打不开</p>
+</blockquote>
+<p>代理服务器设置→取消手动代理 打开自动代理（自动检测设置）</p>
 <blockquote>
 <p>Warning:This Python interpreter is in a conda environment, but the environment has not been activated.  Libraries may fail to load. To activate this environment please see <a href="https://conda.io/activation">https://conda.io/activation</a></p>
 </blockquote>
@@ -104,8 +112,12 @@
 <p>due to incompatibility with several python libraries, ‘Destination Floder’ cannot contain non-ascii characters (special characters or deacreitics).</p>
 </blockquote>
 <p>安装路径里有汉字….</p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><ul>
+<li>环境配置一定要注明python版本 否则无法使用</li>
+<li>在配置某个环境的时候一定要先创建一个环境 在里面进行相应包的下载</li>
+</ul>
 <ul>
-<li><p>tensorflow安装</p>
+<li><p>tensorflow安装<br>其实可以直接在anaconda库种安装tensorflow-gpu</p>
 <ul>
 <li>cpu版本：pip install tensorflow<br> -非nvidia芯片安装gpu版本</li>
 <li>安装报错：<a href="https://pypi.org/project/tensorflow-gpu/#files">https://pypi.org/project/tensorflow-gpu/#files</a><blockquote>
@@ -113,8 +125,7 @@
 </blockquote>
 </li>
 </ul>
-<p> 加入代码<br> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line">os.environ[<span class="string">&#x27;TF_CPP_MIN_LOG_LEVEL&#x27;</span>] = <span class="string">&#x27;2&#x27;</span></span><br></pre></td></tr></table></figure>
- </p>
+<p> 加入代码<br> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line">os.environ[<span class="string">&#x27;TF_CPP_MIN_LOG_LEVEL&#x27;</span>] = <span class="string">&#x27;2&#x27;</span></span><br></pre></td></tr></table></figure></p>
 </li>
 <li><p>框架安装</p>
 <ul>
@@ -144,8 +155,8 @@
     <title>opencv用多少学多少</title>
     <url>/2023/%E7%8E%A9%E7%8E%A9/opencv/</url>
     <content><![CDATA[<p>opencv是一种计算机视觉算法 可以对图像视频进行特定识别处理</p>
-<h1 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h1><h2 id="HSV色彩空间"><a href="#HSV色彩空间" class="headerlink" title="HSV色彩空间"></a>HSV色彩空间</h2><p>Hue色调 在HSV色彩空间中取值为[0,360]在opencv中直接将色调除以2，得到[0,180]之间的值（适应八位二进制256个灰度级的存储和表示范围）<br>Saturation饱和度 灰度颜色中RGB相等 饱和度为0 其范围应当为[0,1] 为了适应8位图的256个像素级 需要将其映射为[0,255]<br>Value亮度 范围为[0,1]映射同上 亮度值越大 图像越亮 亮度为0时是纯黑色</p>
-<h2 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h2><p>图片导入<code>img = cv2.imread(&#39;name.png/jpg...&#39;)</code><br>尺寸<code>rows,cols = img.shape[:2]</code><br><code>.shape</code>可以输出图像大小<br><code>cv2.imshow(&#39;name&#39;,img)</code>可以打印图片 其中name为exe左上名称 img为图像参数<br>一般<code>imshow</code>后面会跟一个<code>cv2.waitKey()</code> 会在一定时间内等待接收键盘上的一个值 括号内可填写参数<code>delay</code> 如果&lt;&#x3D;0会一直等待按键 取正整数表示等待按键的时间（单位：帧） 期间按键返回按键阿斯特码值</p>
+<h1 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h1><h2 id="HSV色彩空间"><a href="#HSV色彩空间" class="headerlink" title="HSV色彩空间"></a>HSV色彩空间</h2><p>Hue色调 在HSV色彩空间中取值为[0,360]在opencv中直接将色调除以2，得到[0,180]之间的值（适应八位二进制256个灰度级的存储和表示范围）<br>Saturation饱和度 灰度颜色中RGB相等 饱和度为0 其范围应当为[0,1] 为了适应8位图的256个像素级 需要将其映射为[0,255]<br>Value亮度 范围为[0,1]映射同上 亮度值越大 图像越亮 亮度为0时是纯黑色<br>opencv可以将彩图转化为灰度图像 将灰度图像转化为二值图像（0为黑 255为白）</p>
+<h2 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h2><p>图片导入<code>img = cv2.imread(&#39;name.png/jpg...&#39;)</code>获得的是像素值 后可跟参数<code>-1</code>保持原格式不变<code>0</code>单通道灰度图像<code>1</code>三通道（默认值）或者是跟其他命令函数比如<code>cv2.IMREAD_REDUCED_GRAYSCALE_2</code>将图像转换为单通道灰度图像并将尺寸减小到1&#x2F;2<code>cv2.IMREAD_REDUCED_COLOR_2</code>将图像转换为3通道BGR彩色图像并将尺寸减小为原来的1&#x2F;2<br>尺寸<code>rows,cols = img.shape[:2]</code><br><code>.shape</code>可以输出图像大小<br><code>cv2.imshow(&#39;name&#39;,img)</code>可以打印图片 其中name为exe左上名称 img为图像参数<br>一般<code>imshow</code>后面会跟一个<code>cv2.waitKey()</code> 会在一定时间内等待接收键盘上的一个值 括号内可填写参数<code>delay</code> 如果&lt;&#x3D;0会一直等待按键 取正整数表示等待按键的时间（单位：帧ms） 期间按键返回按键阿斯特码值<br>释放窗口<code>cv2.destoryWindow(winname)</code>winname为空时销毁所有窗口<br>保存图像&#96;retval &#x3D; cv2.imwrite(filename,img[,params])retval返回值 操作成功返回True反之False；filename是保存目标的完整路径 包括后缀；img是被保存的图像；params保存类型参数</p>
 <h1 id="图像识别"><a href="#图像识别" class="headerlink" title="图像识别"></a>图像识别</h1><h2 id="判断图像内像素点是否在范围内"><a href="#判断图像内像素点是否在范围内" class="headerlink" title="判断图像内像素点是否在范围内"></a>判断图像内像素点是否在范围内</h2><blockquote>
 <p>dst &#x3D; cv2.inRange(src,lowerb,upperb)</p>
 </blockquote>
@@ -154,7 +165,7 @@
 <ul>
 <li>以红色为例<br>红色：[0,100,100] 到 [10,255,255]<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">minRed = np.array([<span class="number">0</span>, <span class="number">50</span>, <span class="number">50</span>])</span><br><span class="line">maxRed = np.array([<span class="number">10</span>, <span class="number">255</span>, <span class="number">255</span>])</span><br><span class="line">maskRed = cv2.inRange(hsv, minRed, maxRed)</span><br><span class="line"><span class="comment"># 通过掩码按位与操作，锁定红色区域</span></span><br><span class="line"><span class="title class_">Red</span> = cv2.bitwise_and(opencv, opencv, mask=maskRed)</span><br><span class="line">cv2.imshow(<span class="string">&#x27;Red&#x27;</span>, <span class="title class_">Red</span>)</span><br><span class="line">cv2.waitKey()</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="图像的几何变换"><a href="#图像的几何变换" class="headerlink" title="图像的几何变换"></a>图像的几何变换</h2><p>几何变换指将一幅图像映射到另一幅图像内的操作</p>
+<h1 id="图像操作"><a href="#图像操作" class="headerlink" title="图像操作"></a>图像操作</h1><h2 id="图像的几何变换"><a href="#图像的几何变换" class="headerlink" title="图像的几何变换"></a>图像的几何变换</h2><p>几何变换指将一幅图像映射到另一幅图像内的操作</p>
 <h3 id="图像缩放"><a href="#图像缩放" class="headerlink" title="图像缩放"></a>图像缩放</h3><blockquote>
 <p>dst &#x3D; cv2.resize(src,dize[,fx,[fx[,interpolation]]])</p>
 </blockquote>
@@ -163,6 +174,16 @@
 <p>dst &#x3D; cv2.flip(src,flipCode)</p>
 </blockquote>
 <p>其中flipCode：<code>0</code>为竖直翻转 <code>1</code>为水平翻转 <code>-1</code>为水平竖直翻转</p>
+<h2 id="图像截取"><a href="#图像截取" class="headerlink" title="图像截取"></a>图像截取</h2><blockquote>
+<p>img &#x3D; src[col1:col2,row1:row2]</p>
+</blockquote>
+<p>输出img就是src相应位置截取后的图片</p>
+<blockquote>
+<p>img2[col1:col2,row1:row2] &#x3D; img</p>
+</blockquote>
+<p>可以实现img贴到img2相应位置</p>
+<h1 id="特殊处理"><a href="#特殊处理" class="headerlink" title="特殊处理"></a>特殊处理</h1><h2 id="高斯滤波函数"><a href="#高斯滤波函数" class="headerlink" title="高斯滤波函数"></a>高斯滤波函数</h2><p>类似于卷积对图像进行模估</p>
+<p>注意在实际处理时 卷积后会模糊 所以建议记录后记录操作 最后直接对img—_orihin进行处理</p>
 ]]></content>
       <categories>
         <category>玩玩</category>
@@ -715,6 +736,50 @@
 ]]></content>
       <tags>
         <tag>resolution</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>C的一个学</title>
+    <url>/2023/%E5%AD%A6%E7%82%B9/C%E7%9A%84%E4%B8%80%E4%B8%AA%E5%AD%A6/</url>
+    <content><![CDATA[<h1 id="递归、搜索与回溯算法"><a href="#递归、搜索与回溯算法" class="headerlink" title="递归、搜索与回溯算法"></a>递归、搜索与回溯算法</h1><h2 id="框架一"><a href="#框架一" class="headerlink" title="框架一"></a>框架一</h2> <figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">int search(int x)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=算符种数n；i++)</span><br><span class="line">   <span class="keyword">if</span>(satisfy)</span><br><span class="line">   &#123;</span><br><span class="line">      secure the result(<span class="keyword">include</span> <span class="string">&#x27;x&#x27;</span>)</span><br><span class="line">      <span class="keyword">if</span>(x==n-<span class="number">1</span>)</span><br><span class="line">       print the result</span><br><span class="line">      <span class="keyword">else</span> search(x+<span class="number">1</span>) /<span class="regexp">/继续进行这个元素后的排列</span></span><br><span class="line"><span class="regexp">      recover(satisfy to enter the if) </span></span><br><span class="line"><span class="regexp">   &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="框架二"><a href="#框架二" class="headerlink" title="框架二"></a>框架二</h2><figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(reach the goal print)</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"> <span class="keyword">for</span>(int i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line"> <span class="keyword">if</span>(satisfy)</span><br><span class="line">  &#123;</span><br><span class="line">    secure the result </span><br><span class="line">    search(x+<span class="number">1</span>)</span><br><span class="line">    recover</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><ol>
+<li><p>全排列：实际上需要找出每一个排列后的全排列</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">char s[<span class="number">10</span>],ch[<span class="number">10</span>];</span><br><span class="line">int n;</span><br><span class="line">bool p[<span class="number">10</span>];</span><br><span class="line">void search(int x)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(int i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">	 <span class="keyword">if</span>(p[i]==<span class="number">0</span>)     /<span class="regexp">/该字符未参与排列</span></span><br><span class="line"><span class="regexp">	  &#123;</span></span><br><span class="line"><span class="regexp">	  	p[i]=1;      /</span><span class="regexp">/标记该位置的字符已经参与排列</span></span><br><span class="line"><span class="regexp">	  	ch[x]=s[i];        /</span><span class="regexp">/存储字符</span></span><br><span class="line"><span class="regexp">	  	if(x+1==n)     /</span><span class="regexp">/字符串是从0开始记 此时所有位置的字符已经排列完毕</span></span><br><span class="line"><span class="regexp">	  	 cout&lt;&lt;ch&lt;&lt;endl;</span></span><br><span class="line"><span class="regexp">	  	else</span></span><br><span class="line"><span class="regexp">	  	 search(x+1);    /</span><span class="regexp">/让下一个字符作为后一个排列的第一个进行全排列</span></span><br><span class="line"><span class="regexp">        p[i]=0;         /</span><span class="regexp">/只有本排列中参与的字符才会标记为已参与</span></span><br><span class="line"><span class="regexp">	  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">int main()</span></span><br><span class="line"><span class="regexp">&#123;</span></span><br><span class="line"><span class="regexp">	cin&gt;&gt;s;</span></span><br><span class="line"><span class="regexp">	n=strlen(s);</span></span><br><span class="line"><span class="regexp">	search(0);</span></span><br><span class="line"><span class="regexp">	return 0;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>最大公因数gcd</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">int gdc(int m,int n) /<span class="regexp">/前提：n＞m 条件-真-假</span></span><br><span class="line"><span class="regexp">&#123;return n%m==0?m:gdc(m,n%m)&#125; /</span><span class="regexp">/n与m和m与n%m公因数相同捏</span></span><br></pre></td></tr></table></figure></li>
+<li><p>爬楼梯<br>法一 找出基础方法 每层递归一直计数到底层<br>  实际上仍带有p[x]判定</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">int n,p[x];</span><br><span class="line">int t(int x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(p[x]) <span class="keyword">return</span> p[x]; <span class="regexp">//</span>如果本层走法数已算出 直接返回走法</span><br><span class="line">	<span class="keyword">if</span>(x==<span class="number">1</span>) <span class="keyword">return</span> p[x]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">if</span>(x==<span class="number">2</span>) <span class="keyword">return</span> p[x]=<span class="number">2</span>;</span><br><span class="line">	<span class="keyword">return</span> p[x]=t(x-<span class="number">1</span>)+t(x-<span class="number">2</span>); <span class="regexp">//</span>每一层走法数=少一层全走法数+少两层全走法数</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>,&amp;n)   /<span class="regexp">/在一直有输入的情况下持续循环 </span></span><br><span class="line"><span class="regexp">	   cout&lt;&lt;t(n)&lt;&lt;endl;</span></span><br><span class="line"><span class="regexp">    return 0;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>法二  实际上是直接累加</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">void t(int x)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">1</span>) ans++;</span><br><span class="line">    <span class="keyword">if</span>(x==<span class="number">2</span>) ans+=<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">else</span> t(x-<span class="number">1</span>),t(x-<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 一些细碎的知识点</span></span><br><span class="line"><span class="number">1</span>. 一般情况下，程序中不直接将一个浮点变量与另一个变量或常量进行比较来判断是否相等，这是因为c程序中的浮点运算是不精确的，计算结果可能与理论值略有不同，尽管这一误差可能极其微小，但直接比较时仍可能产生与预期不同的结果。</span><br><span class="line">    - e.g.double类型变量x运算结果应当为<span class="number">0</span>，但由于误差结果为<span class="number">10</span>^-<span class="number">123</span>^，但是表达式下==<span class="number">0.0</span>的输出仍为<span class="number">0</span>（<span class="title class_">False</span>）</span><br><span class="line">因此在程序中如果对浮点数比较，通常是判断两个被比较的数值之差是否小于某个给定的误差范围</span><br><span class="line">   - e.g.判断x ？= <span class="number">0</span>时往往写为<span class="string">`fabs(x)&lt;EPS`</span></span><br><span class="line">其中<span class="string">`fabs`</span>是浮点数取绝对值的标准库函数，其函数原型在<span class="string">`&lt;math.h&gt;`</span>库中说明；<span class="string">`EPS`</span>是允许最大误差，由实际要求自定义。</span><br><span class="line"><span class="number">2</span>. 逻辑语句</span><br><span class="line">- <span class="string">`&amp;&amp;`</span>优先级大于<span class="string">`||`</span></span><br><span class="line">- <span class="string">`a&lt;b&lt;c`</span>中 关系运算符是左结合的 实质是只要c大于<span class="number">1</span> 该式恒成立</span><br><span class="line"><span class="number">3</span>. 条件运算符</span><br><span class="line">&gt; z=(a&gt;b)<span class="string">?A</span><span class="symbol">:B</span></span><br><span class="line"></span><br><span class="line">一个复杂的嵌套举例：根据变量的值输出ab大小关系的陈述语句</span><br><span class="line">&gt; printf(<span class="string">&quot;a is %s b&quot;</span>, (a&gt;b) ? <span class="string">&quot;greater than&quot;</span> : (a&lt;b) ? <span class="string">&quot;less than&quot;</span> : <span class="string">&quot;equal to&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>. <span class="string">`switch`</span>语句</span><br><span class="line"><span class="string">``</span><span class="string">`ruby</span></span><br><span class="line"><span class="string"> switch (n)&#123;</span></span><br><span class="line"><span class="string">    case0:    ;break;</span></span><br><span class="line"><span class="string">    case1:    ;break;....</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>不同的case可以共享同一组语句序列和打印结果 可以写在同一行 </p>
+</li>
+<li><p>函数</p>
+</li>
+<li><p>格式</p>
+<blockquote>
+<p>类型名 函数名（参数列表）<br>{<br> 函数体<br>}</p>
+</blockquote>
+</li>
+<li><p>声明（函数本体可写于程序最后）去掉函数体后加分号</p>
+</li>
+<li><p><code>while(scanf(&quot;%d&quot;,&amp;n)!=EOF)</code>在一直有输入的情况下持续循环</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学点</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Oxygen Not Included。basic</title>
+    <url>/2023/%E7%8E%A9%E7%8E%A9/Included/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>玩玩</category>
+      </categories>
+      <tags>
+        <tag>Oxygen Not Included</tag>
       </tags>
   </entry>
 </search>
